@@ -130,7 +130,12 @@ Kohana::modules(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',
   ));*/
-
+Route::set('menu', 'menu')
+    ->defaults(array(
+        'controller' => 'main',
+        'action'     => 'menu',
+    )
+);
 Route::set('reviews', 'reviews')
     ->defaults(array(
         'controller' => 'main',

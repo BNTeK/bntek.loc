@@ -7,8 +7,10 @@ abstract class Controller_Common extends Controller_Template {
     {
        
         parent::before();
-        View::set_global('title', 'Титл сайта');
-        View::set_global('description', 'Описание сайта');
+        View::set_global('title', 'Ресторан VinoGrad');
+        View::set_global('description', 'сайт ресторана VinoGrad');
+        View::set_global('keywords', 'вино, виноград, ресторан в Уральске, VinoGrad');
+
         $this->session = session::instance();
         
         $this->template->content = '&nbsp;';

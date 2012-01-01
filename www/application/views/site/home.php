@@ -1,13 +1,19 @@
-
-
 		<div class="static_home"><img src="../public/img/banners/1.jpg" class="rightimg">
 			<h3>Добро пожаловать в ресторан VinoGrad!</h3>
-	<p style="text-indent:20px;text-align:justify;">Изысканная кухня, незабываемая атмосфера и уютная обстановка ресторана VinoGrad никого не оставят равнодушным.
-К вашим услугам вип-залы на двенадцать персон с отдельным входом, комфортный банкетный зал на сто посадочных мест, учтивый персонал и высококлассный сервис.
-В нашем  ресторане вас ждет отменная европейская кухня и обширная карта вин различного происхождения.</p><p style="text-indent:20px;text-align:justify;"> Порадуйте себя изысканными грузинскими, африканскими, чилийскими, аргентинскими, французскими и итальянскими винами.
-Мы учитываем все Ваши пожелания, гарантируем обходительный персонал и живое музыкальное сопровождение.
-<br><br><b>Приходите в ресторан VinoGrad! Мы ждем Вас!
-У нас не включается процент за обслуживание</p></div>
+			<p style="text-indent:20px;text-align:justify;">Изысканная кухня, незабываемая атмосфера и уютная обстановка ресторана VinoGrad никого не оставят равнодушным.
+				К вашим услугам вип-залы на двенадцать персон с отдельным входом, комфортный банкетный зал на сто посадочных мест, учтивый персонал и высококлассный сервис.
+				В нашем  ресторане вас ждет отменная европейская кухня и обширная карта вин различного происхождения.</p>
+			<p style="text-indent:20px;text-align:justify;"> Порадуйте себя изысканными грузинскими, африканскими, чилийскими, аргентинскими, французскими и итальянскими винами.
+				Мы учитываем все Ваши пожелания, гарантируем обходительный персонал и живое музыкальное сопровождение.
+				<br><br><b>Приходите в ресторан VinoGrad! Мы ждем Вас!</b>
+				У нас не включается процент за обслуживание</p>
+		</div>
+		<div>
+			<a id="single_image" rel="example_group" href="<?php echo URL::site('public/index_image').'/1.jpg'; ?>"><img class="img-polaroid" src="<?php echo URL::site('public/index_image').'/m_1.jpg'; ?>" alt=""></a>
+			<a id="single_image" rel="example_group" href="<?php echo URL::site('public/index_image').'/2.jpg'; ?>"><img class="img-polaroid" src="<?php echo URL::site('public/index_image').'/m_2.jpg'; ?>" alt=""></a>
+			<a id="single_image" rel="example_group" href="<?php echo URL::site('public/index_image').'/3.jpg'; ?>"><img class="img-polaroid" src="<?php echo URL::site('public/index_image').'/m_3.jpg'; ?>" alt=""></a>
+		</div>
+
 		<br/>
 		<div class="home_block">
 	<?php if(isset($model)):?>

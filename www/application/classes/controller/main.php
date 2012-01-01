@@ -116,6 +116,7 @@ class Controller_Main extends Controller_Common {
 
     public function action_contact()
     {
+        $this->template->title = 'Контакты';
         $this->template->content = View::factory('contact');
 
     }

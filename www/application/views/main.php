@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo $title ?></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<meta name="description" content="<?php echo $description; ?>" />
 <!-- START LESS-->
 <link rel="stylesheet/less" type="text/css" href="<?php echo URL::base(); ?>public/less/bootstrap.less">
 <link rel="stylesheet/less" type="text/css" href="<?php echo URL::base(); ?>public/less/responsive.less">
@@ -50,7 +50,7 @@
 			<?php if(!$auth->logged_in()):?>
 			<div id="menu_block">
 				<br/>
-				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('main/menu');?>">Меню</a></p>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('menu');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('reviews');?>">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::site('contact');?>">Контакты</a></p>
