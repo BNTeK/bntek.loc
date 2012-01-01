@@ -86,7 +86,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 
-    'base_url'   => 'http://vinograd/',
+    'base_url'   => 'http://vinograd.kz/',
     'index_file' => FALSE,
     'errors' => TRUE,
 ));

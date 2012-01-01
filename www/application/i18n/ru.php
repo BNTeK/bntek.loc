@@ -4,4 +4,5 @@ return array(
 'cookCost' => 'Цена',
 'cookRemark' => 'Описание',
 'cookAddBtn' => 'Добавит',
+'cookCateg' => 'Категория'
 );
