@@ -1,0 +1,54 @@
+/* 
+    Document   : ourStyle
+    Created on : 19.09.2012, 16:36:22
+    Author     : mikspark
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.list{
+    margin: 25;
+}
+
+
+
+div.table{
+   height:0;
+}
+
+div.td{
+   height:100%; 
+   float: left;
+}
+.cellsBlock {
+  width: 100%;
+  display: table;
+}
+.cellLeft, .cellMiddle, .cellRight .cellMiddle2 {
+  display: table-cell !important;
+  display: inline; /* для IE */
+}
+.cellLeft, .cellRight {
+  width:35%;
+}
+.cellMiddle, .cellMiddle2 {
+  
+  width:30%;
+}
+
+.Mname{
+  background-color: #b8b8b8;  
+}
+.Mcost{
+  background-color: #b8b8b8;
+}
+.Mnumcost{
+  color: #ff9600;
+  font-size: 15px;
+}
