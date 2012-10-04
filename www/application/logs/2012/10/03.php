@@ -3286,3 +3286,33 @@
 --
 #0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-10-03 06:38:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 06:38:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 06:38:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 06:38:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 06:38:18 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:18 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: js/jquery-1.3.1.min.js ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 06:38:18 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+2012-10-03 06:38:18 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH\classes\kohana\request.php [ 1142 ]
+--
+#0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
+#1 {main}
