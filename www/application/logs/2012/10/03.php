@@ -3316,3 +3316,37 @@
 --
 #0 C:\xampp\htdocs\bntek.loc\www\index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-10-03 23:54:15 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL / was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-03 23:54:15 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL / was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /home/shaman/web/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-03 23:54:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-03 23:54:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-03 23:54:31 --- ERROR: Database_Exception [ 2 ]: mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) ~ MODPATH/database/classes/kohana/database/mysql.php [ 67 ]
+2012-10-03 23:54:31 --- STRACE: Database_Exception [ 2 ]: mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) ~ MODPATH/database/classes/kohana/database/mysql.php [ 67 ]
+--
+#0 /home/shaman/web/bntek.loc/www/modules/database/classes/kohana/database/mysql.php(171): Kohana_Database_MySQL->connect()
+#1 /home/shaman/web/bntek.loc/www/modules/database/classes/kohana/database/mysql.php(358): Kohana_Database_MySQL->query(1, 'SHOW FULL COLUM...', false)
+#2 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(1538): Kohana_Database_MySQL->list_columns('images')
+#3 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(392): Kohana_ORM->list_columns()
+#4 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(337): Kohana_ORM->reload_columns()
+#5 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(246): Kohana_ORM->_initialize()
+#6 /home/shaman/web/bntek.loc/www/system/classes/kohana/model.php(26): Kohana_ORM->__construct()
+#7 /home/shaman/web/bntek.loc/www/application/classes/controller/main.php(9): Kohana_Model::factory('image')
+#8 [internal function]: Controller_Main->action_index()
+#9 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client/internal.php(116): ReflectionMethod->invoke(Object(Controller_Main))
+#10 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#11 /home/shaman/web/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#12 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#13 {main}
+2012-10-03 23:54:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-03 23:54:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}

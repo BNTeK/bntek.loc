@@ -11,7 +11,7 @@ return array(
 
 	// Username/password combinations for the Auth File driver
 	'users' => array(
-		// 'admin' => 'b3154acf3a344170077d11bdb5fff31532f679a1919e716a02',
+		 'admin' => '5ce4837a1d6b389807e98e574935a223725e9fd188102953ad557eb8203b66de',
 	),
 
 );

@@ -19,6 +19,13 @@ abstract class Controller_Common extends Controller_Template {
         }
  
   
-
+     static public function check_role()
+        {
+            if(!Auth::instance()->logged_in())
+                {throw new HTTP_Exception_404();}
+            else {
+                return FALSE;
+            }
+        }
   
 }

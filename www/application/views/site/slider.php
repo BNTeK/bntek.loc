@@ -1,9 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>JQuery Photo Slider with Semi Transparent Caption</title>
 
-<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {		
@@ -122,16 +120,11 @@ body{
 	<div id="gallery">
 	<?php if(isset($img)):?>
 	<?php foreach($img as $key => $value):?>
-	<a >
-		<img src="<?php echo URL::base().'img/'.$value->name?>" alt="<?php echo $value->alt?>" width="600" height="200" title="" alt="" rel="<h3><?php echo $value->alt?></h3><?php echo $value->rel?> "/>
+	<a>
+		<img src="<?php echo URL::base().'img/'.$value->name?>" alt="<?php echo $value->alt?>" width="600" height="200" title="" alt="" rel="<h3><?php echo $value->alt?></h3><?php echo $value->rel?>/>
 	</a>
 	<?php endforeach?>
 			<?php endif?>
-
-
-	
-	
-	
 	<div class="caption"><div class="content"></div></div>
 </div>
 <div class="clear"></div>

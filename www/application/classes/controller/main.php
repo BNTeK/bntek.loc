@@ -6,7 +6,7 @@ class Controller_Main extends Controller_Common {
     {
          $this->template->content= View::factory('site/home')
          ->bind('img',$img);
-         $img = Model::factory('image')->where('home','=',1)->find_all();
+         
          
     }
 
@@ -29,7 +29,7 @@ class Controller_Main extends Controller_Common {
         $send = ORM::factory('recall');
         $q = "SELECT `recalls`.`id`,`name`,`email`,`text`,`recalls`.`post_time`,`theme` FROM `recalls`";
         $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-        var_dump(time());
+    
       $this->template->content= View::factory('site/recall_send')
       ->bind('errors', $errors)
       ->bind('model', $model);

@@ -8,6 +8,9 @@
 			<p>Сообщение: <?php echo $value['text'];?></p>
 			<p>Время: <?php echo date("m.d.y , H:i:s", $value['post_time'])?></p>
 			<br/>
+			<?php if (Auth::instance()->logged_in()):?>
+			<p>Ответить Одобрить Удалить!</p>
+		<?php endif?>
 		</div>
 	<?php endforeach ?>
 	<?php endif?>	

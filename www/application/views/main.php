@@ -28,11 +28,11 @@
 
 	<div id="header">
 		<h1>ВинограД!</h1>
-		<div><a href="<?php echo URL::base();?>main/langChange/Ru">ru</a></li>
+		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru">ru</a></li>
       		 <a href="<?php echo URL::base();?>main/langChange/En">en</a></li>
        		 <a href="<?php echo URL::base();?>main/langChange/Kz">kz</a></li></div>
+		<div id="slider">SLIDER</div>
 	</div><!-- #header-->
-
 	<div id="middle">
 
 		<div id="container">
@@ -43,17 +43,34 @@
 		</div><!-- #container-->
 
 		<div class="sidebar" id="sideLeft">
-			<h2>LEFT</h2>
-			<p><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
-			<p>Галерея</p>
-			<p>Отзывы</p> 
-			<p>контакты</p>
-		<a href="#" class="expand">Expand column</a>		</div><!-- .sidebar#sideLeft -->
+			<?php if(!Auth::instance()->logged_in()):?>
+			<div id="menu_block">
+				<h2>LEFT</h2>
+				<p><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
+				<p>Галерея</p>
+				<p>Отзывы</p> 
+				<p>контакты</p>
+			</div>
+			<?php endif?>
+			<?php if(Auth::instance()->logged_in()):?>
+			<div id="admin_menu_block" >
+				<br/>
+				<p class="menu_link menu_link_solo"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
+				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
+				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Галерея</a></p> 
+				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Информация</a></p>
+				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
+				<p class="menu_link"> <a href="<?php echo URL::base();?>/admin/image_view">Выход</a></p>
+			<?php endif?>
+			</div>
+			
+		</div><!-- .sidebar#sideLeft -->
 
 	</div><!-- #middle-->
 
 	<div id="footer">
-		<h1>FOOTER</h1>
+		<div id="footer_line">тест</div>
+		<br/>
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->

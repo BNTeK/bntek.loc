@@ -5,17 +5,17 @@ class Model_Cookmenu extends ORM {
 	public function rules()
     {
         return array(
-            'nameRU' => array(
+            'name_ru' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 array('max_length',array(':value', 128)),
                 ),
-            'nameEN' => array(
+            'name_en' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 array('max_length',array(':value', 128)),
                 ),
-            'nameKZ' => array(
+            'name_kz' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 array('max_length',array(':value', 128)),
@@ -24,15 +24,15 @@ class Model_Cookmenu extends ORM {
                 array('not_empty'),
                 array('numeric'),
                 ),
-            'remarkRU' => array(
+            'remark_ru' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 ),
-            'remarkEN' => array(
+            'remark_en' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 ),
-            'remarkKZ' => array(
+            'remark_kz' => array(
                 array('not_empty'),
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 ),

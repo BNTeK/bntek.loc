@@ -1,1 +1,0 @@
-<?php echo View::factory('site/slider')->bind('img',$img);?>

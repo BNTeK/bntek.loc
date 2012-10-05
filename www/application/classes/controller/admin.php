@@ -4,29 +4,39 @@ class Controller_Admin extends Controller_Common {
     
      public function action_index ()
     {
-         
-    }
-
-    public function action_cookMenu_Add()
+         $this->template->content= View::factory('admin/login')
+      ->bind('errors', $errors);
+        if ( ! isset($_POST['submit'])) return;
+        
+          if (Auth::instance()->login($_POST['login'], $_POST['password']))
+              {
+                
+              }
+              else
+              {
+                echo "НЕТ";
+              }
+    }          
+    public function action_cookMenu_add()
     {
       $lang = $this->session->get('lang');
+      $this->check_role();
+
+      
       $this->template->content= View::factory('admin/addmenu')
       ->bind('errors', $errors)
       ->bind('menu',$menu)
       ->bind('lang', $lang)
       ->bind('category',$category);
       $model = ORM::factory('Cookmenu');
-      $category = DB::select('id','сname'.$lang)->from('categories')->execute()->as_array();
+      $category = DB::select('id','cname_'.$lang)->from('categories')->execute()->as_array();
       $menu = $this->getmenu();
        if ( ! isset($_POST['submit'])) return;
-      $post = Arr::extract($_POST, array('nameRU','nameEN','nameKZ','cost','remarkRU','remarkEN','remarkKZ','categories'),null);
-       $post +=$post['status'] = 0;
-       $post +=$post['post_time'] = time();
-       print_r($post);
-       die();
+      $post = Arr::extract($_POST, array('name_ru','name_en','name_kz','cost','remark_ru','remark_en','remark_kz','categories'),null);
+      
       try {
         $model->values($post);
-        $model->save();
+        $model->save(); 
         
       } catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('models'); 
@@ -35,6 +45,8 @@ class Controller_Admin extends Controller_Common {
 
     public function action_cookMenu_del()
     {
+      $this->check_role();
+
       $id = $this->request->param('id');
         $model = ORM::factory('Cookmenu')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
@@ -46,6 +58,8 @@ class Controller_Admin extends Controller_Common {
 
     public function action_cookMenu_edit()
     {
+      $this->check_role();
+
       $id = $this->request->param('id');
         $model = ORM::factory('Cookmenu')->where('id','=',$id)->limit(1)->find();
       if($model->loaded()){
@@ -69,24 +83,27 @@ class Controller_Admin extends Controller_Common {
         }
     }
 
-    public function action_category_Add()
+    public function action_category_add()
       {
+        $this->check_role();
 
       $lang = $this->session->get('lang');
       $this->template->content= View::factory('admin/addcategory')
       ->bind('errors', $errors)
       ->bind('lang', $lang)
       ->bind('category', $category);
-       $category = DB::select('id','сname'.$lang)->from('categories')->execute()->as_array();
+       $category = DB::select('id','cname_'.$lang)->from('categories')->execute()->as_array();
        $model = ORM::factory('category');
+       $post = Arr::extract($_POST, array('cname_ru','cname_en','cname_kz'),null);
 
        if ( ! isset($_POST['submit'])) return;
         try {
-        $model->values($_POST);
+        $model->values($post);
         $model->save();
         
       } catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('model'); 
+
        
         
       }
@@ -94,6 +111,8 @@ class Controller_Admin extends Controller_Common {
     
     public function action_category_del()
     {
+      $this->check_role();
+
       $id = $this->request->param('id');
         $model = ORM::factory('category')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
@@ -108,7 +127,8 @@ class Controller_Admin extends Controller_Common {
 
     public function action_langChange()
   {
-       
+       $this->check_role();
+
     $id = $this->request->param('id', 'ru');
     $this->session->set('lang', $id);
     $ref = $this->request->referrer();
@@ -120,7 +140,7 @@ class Controller_Admin extends Controller_Common {
   {
       
       $lang = $this->session->get('lang');
-      $q = "SELECT `cookmenus`.`id`, `сname".$lang."`,`cost` , `cookmenus`.`name" . $lang  . "`,`cookmenus`.`remark".$lang."` FROM `cookmenus` LEFT JOIN `categories` ON `cookmenus`.`categories` = `categories`.`id`";
+      $q = "SELECT `cookmenus`.`id`, `cname_".$lang."`,`cost` , `cookmenus`.`name_" . $lang  . "`,`cookmenus`.`remark_".$lang."` FROM `cookmenus` LEFT JOIN `categories` ON `cookmenus`.`categories` = `categories`.`id`";
       $result = DB::query(Database::SELECT, $q)->execute()->as_array();
       
             return $result;
@@ -128,6 +148,8 @@ class Controller_Admin extends Controller_Common {
 
   public function action_image_add()
   {
+    $this->check_role();
+
     $model = ORM::factory('image');
     $this->template->content= View::factory('admin/addimage')
     ->bind('errors', $errors);
@@ -171,16 +193,34 @@ class Controller_Admin extends Controller_Common {
 
   public function action_image_view()
   {
+      $this->check_role();
+      
+      $page = $this->request->param('page');
+
     $q = "SELECT `images`.`id`, images.`name` FROM `images`";
     $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-    $this->template->content= View::factory('admin/viewimage')
-    ->bind('model', $model);
-    
+    $total = count($model);
+    $pagination = Pagination::factory( array(
+      'current_page' => array('source' => 'route', 'key' => 'page'),
+      'total_items' => $total,
+      'items_per_page' => 1,
+      'auto_hide' => false,
+      'view' => 'pagination/forkohana',
+      'first_page_in_url' => TRUE,
+      ))
+      ->route_params( array(
+        'controller' => Request::current()->controller(),
+        'action' => Request::current()->action(),
+      ));
+    $this->template->content= View::factory('admin/viewimage')->bind('pagination',$pagination)->bind('model', $model)->bind('id',$page);
   } 
 
 
   public function action_image_del()
     {
+
+      $this->check_role();
+
       $id = $this->request->param('id');
         $model = ORM::factory('image')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
@@ -194,18 +234,22 @@ class Controller_Admin extends Controller_Common {
 
     public function action_recall_check()
     {
+      $this->check_role();
+
       $this->template->content= View::factory('admin/recallcheck')
       ->bind('errors',$errors)
       ->bind('model',$model);
       $q = "SELECT `recalls`.`id`,`name`,`email`,`text`, `theme` FROM `recalls`";
       $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-      print_r($model);
     }
 
     public function action_recall_del()
     {
-      $id = $this->request->param('id');
-        $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
+
+        $this->check_role();
+
+          $id = $this->request->param('id');
+          $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
           $model->delete();
           $ref = $this->request->referrer();
@@ -216,6 +260,9 @@ class Controller_Admin extends Controller_Common {
 
     public function action_recall_reply()
     {
+
+      $this->check_role();
+
       $id = $this->request->param('id');
         $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
@@ -261,6 +308,7 @@ class Controller_Admin extends Controller_Common {
 
 public function action_page_add()
 {
+    $this->check_role();
 
   // create default editor instance 500x300
 $editor = editor::factory('CKEditor');
@@ -268,6 +316,10 @@ $editor = editor::factory('CKEditor');
    if ( ! isset($_POST['submit'])) return;
 }
 
-
+public function action_logout()
+    {
+        Auth::instance()->logout(TRUE);
+        $this->request->redirect(URL::site());
+    }          
 
 } // End Page
