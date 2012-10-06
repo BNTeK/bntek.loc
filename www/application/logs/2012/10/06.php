@@ -2206,3 +2206,93 @@
 --
 #0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-10-06 06:01:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:01:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:02:05 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:02:05 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:02:17 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:02:17 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:02:47 --- ERROR: ErrorException [ 8 ]: Undefined offset: -1 ~ APPPATH/views/admin/viewimage.php [ 5 ]
+2012-10-06 06:02:47 --- STRACE: ErrorException [ 8 ]: Undefined offset: -1 ~ APPPATH/views/admin/viewimage.php [ 5 ]
+--
+#0 /home/shaman/web/bntek.loc/www/application/views/admin/viewimage.php(5): Kohana_Core::error_handler(8, 'Undefined offse...', '/home/shaman/we...', 5, Array)
+#1 /home/shaman/web/bntek.loc/www/system/classes/kohana/view.php(61): include('/home/shaman/we...')
+#2 /home/shaman/web/bntek.loc/www/system/classes/kohana/view.php(343): Kohana_View::capture('/home/shaman/we...', Array)
+#3 /home/shaman/web/bntek.loc/www/system/classes/kohana/view.php(228): Kohana_View->render()
+#4 /home/shaman/web/bntek.loc/www/application/views/main.php(44): Kohana_View->__toString()
+#5 /home/shaman/web/bntek.loc/www/system/classes/kohana/view.php(61): include('/home/shaman/we...')
+#6 /home/shaman/web/bntek.loc/www/system/classes/kohana/view.php(343): Kohana_View::capture('/home/shaman/we...', Array)
+#7 /home/shaman/web/bntek.loc/www/system/classes/kohana/controller/template.php(44): Kohana_View->render()
+#8 [internal function]: Kohana_Controller_Template->after()
+#9 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client/internal.php(119): ReflectionMethod->invoke(Object(Controller_Admin))
+#10 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#11 /home/shaman/web/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#12 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#13 {main}
+2012-10-06 06:02:48 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:02:48 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:02:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:02:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:03:14 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:03:14 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:03:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:03:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:03:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:03:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:04:40 --- ERROR: Database_Exception [ 1062 ]: Duplicate entry '0' for key 'PRIMARY' [ INSERT INTO `cookmenus` (`name_ru`, `name_en`, `name_kz`, `cost`, `remark_ru`, `remark_en`, `remark_kz`, `categories`) VALUES ('Еда', 'Еда на анг', 'Еда на каз', '1223', 'Еду надо есть', 'Еду надо есть', 'Еду надо есть', '3') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+2012-10-06 06:04:40 --- STRACE: Database_Exception [ 1062 ]: Duplicate entry '0' for key 'PRIMARY' [ INSERT INTO `cookmenus` (`name_ru`, `name_en`, `name_kz`, `cost`, `remark_ru`, `remark_en`, `remark_kz`, `categories`) VALUES ('Еда', 'Еда на анг', 'Еда на каз', '1223', 'Еду надо есть', 'Еду надо есть', 'Еду надо есть', '3') ] ~ MODPATH/database/classes/kohana/database/mysql.php [ 194 ]
+--
+#0 /home/shaman/web/bntek.loc/www/modules/database/classes/kohana/database/query.php(245): Kohana_Database_MySQL->query(2, 'INSERT INTO `co...', false, Array)
+#1 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(1252): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 /home/shaman/web/bntek.loc/www/modules/orm/classes/kohana/orm.php(1348): Kohana_ORM->create(NULL)
+#3 /home/shaman/web/bntek.loc/www/application/classes/controller/admin.php(39): Kohana_ORM->save()
+#4 [internal function]: Controller_Admin->action_cookMenu_add()
+#5 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client/internal.php(116): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /home/shaman/web/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#7 /home/shaman/web/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#8 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#9 {main}
+2012-10-06 06:04:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:04:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:07:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:07:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:07:09 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:07:09 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-06 06:07:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-06 06:07:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /home/shaman/web/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}

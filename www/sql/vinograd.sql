@@ -1,55 +1,88 @@
--- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               5.5.25a - MySQL Community Server (GPL)
--- Server OS:                    Win32
--- HeidiSQL version:             7.0.0.4165
--- Date/time:                    2012-10-04 08:55:42
--- --------------------------------------------------------
+-- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Окт 06 2012 г., 17:09
+-- Версия сервера: 5.5.24
+-- Версия PHP: 5.3.10-1ubuntu3.3
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping database structure for vinograd
-CREATE DATABASE IF NOT EXISTS `vinograd` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `vinograd`;
+--
+-- База данных: `vinograd`
+--
 
+-- --------------------------------------------------------
 
--- Dumping structure for table vinograd.categories
+--
+-- Структура таблицы `categories`
+--
+
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cnameEN` varchar(128) COLLATE utf8_bin DEFAULT NULL,
-  `cnameRU` varchar(128) COLLATE utf8_bin NOT NULL,
-  `cnameKZ` varchar(128) COLLATE utf8_bin NOT NULL,
+  `cname_en` varchar(128) DEFAULT NULL,
+  `cname_ru` varchar(128) DEFAULT NULL,
+  `cname_kz` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
--- Data exporting was unselected.
+--
+-- Дамп данных таблицы `categories`
+--
 
+INSERT INTO `categories` (`id`, `cname_en`, `cname_ru`, `cname_kz`) VALUES
+(1, 'фыв', 'ыф', 'ыфв'),
+(2, 'фыв', 'ыф', 'ыфв'),
+(3, 'фыв', 'ыф', 'ыфв'),
+(4, 'фыв', 'ыф', 'ыфв'),
+(5, 'фыв', 'ыф', 'ыфв'),
+(6, 'фыв', 'ыф', 'ыфв'),
+(7, 'фыв', 'ыф', 'ыфв');
 
--- Dumping structure for table vinograd.cookmenus
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `cookmenus`
+--
+
 CREATE TABLE IF NOT EXISTS `cookmenus` (
-  `id` int(11) NOT NULL,
-  `nameRU` varchar(128) COLLATE utf8_bin NOT NULL,
-  `NameEN` varchar(128) COLLATE utf8_bin DEFAULT NULL,
-  `nameKZ` varchar(128) COLLATE utf8_bin DEFAULT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name_ru` varchar(128) CHARACTER SET utf8 NOT NULL,
+  `name_en` varchar(128) CHARACTER SET utf8 DEFAULT NULL,
+  `name_kz` varchar(128) CHARACTER SET utf8 DEFAULT NULL,
   `cost` int(11) NOT NULL,
-  `remarkRU` text COLLATE utf8_bin NOT NULL,
-  `remarkEN` text COLLATE utf8_bin,
-  `remarkKZ` text COLLATE utf8_bin,
-  `lang` varchar(2) COLLATE utf8_bin NOT NULL,
+  `remark_ru` text CHARACTER SET utf8 NOT NULL,
+  `remark_en` text CHARACTER SET utf8,
+  `remark_kz` text CHARACTER SET utf8,
   `post_data` int(11) NOT NULL,
   `categories` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_cookmenus_categories1` (`categories`),
-  CONSTRAINT `fk_cookmenus_categories1` FOREIGN KEY (`categories`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  KEY `fk_cookmenus_categories1` (`categories`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
 
--- Data exporting was unselected.
+--
+-- Дамп данных таблицы `cookmenus`
+--
 
+INSERT INTO `cookmenus` (`id`, `name_ru`, `name_en`, `name_kz`, `cost`, `remark_ru`, `remark_en`, `remark_kz`, `post_data`, `categories`) VALUES
+(1, 'asd', 'sad', 'sad', 123123, 'sad', 'sad', 'ads', 0, 1),
+(2, 'Еда', 'Еда на анг', 'Еда на каз', 1223, 'Еду надо есть', 'Еду надо есть', 'Еду надо есть', 0, 3),
+(3, 'Еда', 'Еда на анг', 'Еда на каз', 1223, 'Еду надо есть', 'Еду надо есть', 'Еду надо есть', 0, 3);
 
--- Dumping structure for table vinograd.images
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `images`
+--
+
 CREATE TABLE IF NOT EXISTS `images` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(128) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
@@ -57,12 +90,23 @@ CREATE TABLE IF NOT EXISTS `images` (
   `rel` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `home` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
--- Data exporting was unselected.
+--
+-- Дамп данных таблицы `images`
+--
 
+INSERT INTO `images` (`id`, `name`, `alt`, `rel`, `home`) VALUES
+(5, '1349421476.jpg', 'Отображаемое имя', '', 0),
+(6, '1349422108.jpg', 'Отображаемое имя', '', 0),
+(7, '1349422134.jpg', 'Отображаемое имя', '', 0);
 
--- Dumping structure for table vinograd.recalls
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `recalls`
+--
+
 CREATE TABLE IF NOT EXISTS `recalls` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(128) COLLATE utf8_bin NOT NULL,
@@ -72,50 +116,69 @@ CREATE TABLE IF NOT EXISTS `recalls` (
   `post_time` int(11) NOT NULL,
   `status` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
 
--- Data exporting was unselected.
+--
+-- Дамп данных таблицы `recalls`
+--
 
+INSERT INTO `recalls` (`id`, `name`, `email`, `theme`, `text`, `post_time`, `status`) VALUES
+(1, 'uralsk.kz', 'bntek@mail.kz', 'qweq', 'qweew', 1349429963, 0);
 
--- Dumping structure for table vinograd.replies
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `replies`
+--
+
 CREATE TABLE IF NOT EXISTS `replies` (
   `id` int(11) unsigned NOT NULL,
   `text` text COLLATE utf8_bin NOT NULL,
   `post_time` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_replies_recalls1` (`id`),
-  CONSTRAINT `fk_replies_recalls1` FOREIGN KEY (`id`) REFERENCES `recalls` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_replies_recalls1` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Data exporting was unselected.
+--
+-- Дамп данных таблицы `replies`
+--
 
+INSERT INTO `replies` (`id`, `text`, `post_time`) VALUES
+(1, 'sasasa', 1349521081);
 
--- Dumping structure for table vinograd.roles
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `roles`
+--
+
 CREATE TABLE IF NOT EXISTS `roles` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(32) NOT NULL,
   `description` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
--- Data exporting was unselected.
+-- --------------------------------------------------------
 
+--
+-- Структура таблицы `roles_users`
+--
 
--- Dumping structure for table vinograd.roles_users
 CREATE TABLE IF NOT EXISTS `roles_users` (
   `user_id` int(10) unsigned NOT NULL,
   `role_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`user_id`,`role_id`),
-  KEY `fk_role_id` (`role_id`),
-  CONSTRAINT `roles_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `roles_users_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE
+  KEY `fk_role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Data exporting was unselected.
+-- --------------------------------------------------------
 
+--
+-- Структура таблицы `users`
+--
 
--- Dumping structure for table vinograd.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(254) NOT NULL,
@@ -126,12 +189,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_username` (`username`),
   UNIQUE KEY `uniq_email` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
--- Data exporting was unselected.
+-- --------------------------------------------------------
 
+--
+-- Структура таблицы `user_tokens`
+--
 
--- Dumping structure for table vinograd.user_tokens
 CREATE TABLE IF NOT EXISTS `user_tokens` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) unsigned NOT NULL,
@@ -142,11 +207,38 @@ CREATE TABLE IF NOT EXISTS `user_tokens` (
   `expires` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_token` (`token`),
-  KEY `fk_user_id` (`user_id`),
-  CONSTRAINT `user_tokens_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `fk_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
--- Data exporting was unselected.
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `cookmenus`
+--
+ALTER TABLE `cookmenus`
+  ADD CONSTRAINT `cookmenus_ibfk_1` FOREIGN KEY (`categories`) REFERENCES `categories` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `replies`
+--
+ALTER TABLE `replies`
+  ADD CONSTRAINT `fk_replies_recalls1` FOREIGN KEY (`id`) REFERENCES `recalls` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Ограничения внешнего ключа таблицы `roles_users`
+--
+ALTER TABLE `roles_users`
+  ADD CONSTRAINT `roles_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `roles_users_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Ограничения внешнего ключа таблицы `user_tokens`
+--
+ALTER TABLE `user_tokens`
+  ADD CONSTRAINT `user_tokens_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
