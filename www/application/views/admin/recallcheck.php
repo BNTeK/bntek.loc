@@ -1,6 +1,6 @@
 <div>
 <?php if(isset($model)):?>
-	<?php foreach($model as $key => $value):?>
+	<?php foreach($model as $value):?>
 		<div>
 			<p>Имя: <?php echo $value['name'];?></p>
 			<p>E-mail: <?php echo $value['email'];?></p>
@@ -9,7 +9,7 @@
 			<p>Время: <?php echo date("m.d.y , H:i:s", $value['post_time'])?></p>
 			<br/>
 			<?php if (Auth::instance()->logged_in()):?>
-			<p>Ответить Одобрить Удалить!</p>
+			<p><a href="<?php echo URL::base();?>\admin\recall_reply\<?php echo $value['id'];?>">Ответить</a> Одобрить Удалить!</p>
 		<?php endif?>
 		</div>
 	<?php endforeach ?>

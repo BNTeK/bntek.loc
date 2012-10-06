@@ -260,7 +260,6 @@ class Controller_Admin extends Controller_Common {
 
     public function action_recall_reply()
     {
-
       $this->check_role();
 
       $id = $this->request->param('id');
@@ -274,12 +273,14 @@ class Controller_Admin extends Controller_Common {
             $data[] = array('name' => $model->name,
                             'email' => $model->email,
                             'theme' => $model->theme,
-                            'text'=> $model->text);
+                            'text'=> $model->text,
+                            'post_time' => $model->post_time,
+                            'id' => $model->id);
             $check = ORM::factory('reply')->where('id','=',$id)->limit(1)->find();
-           if($check->id) $data_reply['text'] = $check->text;
+           if($check->id !== NULL) $data_reply['text'] = $check->text;
            if ( ! isset($_POST['submit'])) return;
           $post = Arr::extract($_POST, array('text'),null);
-           $post['post_time'] = time();
+          $post['post_time'] = time();
 
            if(!$check->id)
            {
@@ -319,7 +320,7 @@ $editor = editor::factory('CKEditor');
 public function action_logout()
     {
         Auth::instance()->logout(TRUE);
-        $this->request->redirect(URL::site());
+        $this->request->redirect(URL::site('main/index'));
     }          
 
 } // End Page

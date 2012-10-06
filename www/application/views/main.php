@@ -30,9 +30,9 @@
 		<div class ="link_main">
 			<a class="link" href='<?php echo URL::base();?>'> </a>
 		</div>
-		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Ru.jpg" class="flag"></a>
-      		 <a href="<?php echo URL::base();?>main/langChange/En"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Eng.jpg" class="flag"></a>
-       		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" class="flag"></a></div>
+		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Ru.jpg" ></a>
+      		 <a href="<?php echo URL::base();?>main/langChange/En"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Eng.jpg" ></a>
+       		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" ></a></div>
 		
 	</div><!-- #header-->
 	<div id="header_slider">SLIDER</div>
@@ -51,7 +51,7 @@
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">Галерея</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">Отзывы</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/recall/">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>
 			<?php endif?>
@@ -63,7 +63,7 @@
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Галерея</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Информация</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
-				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/image_view">Выход</a></p>
+				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/logout">Выход</a></p>
 			</div>
 			<?php endif?>
 			

@@ -14,6 +14,7 @@ body {
 	height: 100%;
 	background: url('../img/style_img/bg_img.jpg');
 	background-size: contain;
+	background-attachment: fixed;
 }
 
 
@@ -42,7 +43,7 @@ input {
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-	height: 167px;
+	height: 165px;
 	background: url('../img/style_img/header.jpg');
 	background-size: auto;
 }
@@ -78,7 +79,7 @@ input {
 #sideLeft {
 	float: left;
 	width: 243px;
-	height: 350px;
+	height: 500px;
 	margin-left: -100%;
 	position: relative;
 	
@@ -107,16 +108,17 @@ input {
 	width: 243px;
 	height: 365px;
 	background: url('../img/style_img/menu_admin.jpg');
-	background-size: auto;
-	text-transform: 
+	background-size: auto; 
 }
 
 .menu_link{
 	font-style: italic;
 	font-size: 20px;
-	font-color: #ffffff;
+	color: #ffffff;
 	margin-top: 26px;
-	margin-left: 56px;
+	
+	text-align: center;
+
 }
 
 .menu_link_solo{
@@ -126,4 +128,59 @@ input {
 #footer_line{
 	background: #cecece;
 	margin-bottom: 50px;
+}
+
+#header_slider{
+	height: 165px;
+}
+
+
+.lang{
+	float: right;
+	margin-right: 80px;
+}
+.link_main{
+	height: 150px;
+	width: 150px;
+	margin-top: 10px;
+	margin-left:10px;
+}
+.link{
+	display: block;
+	height: 150px;
+	width: 150px;
+}
+
+.statements{
+	background-color: #e8d9c4;
+	height: 200px;
+	width: 230px;
+	margin-left: 15px;
+	font-style: italic;
+	color: #894351;
+	padding: 10px;
+}
+
+.statements_caption{
+	float: center;
+	font-size: 18px;
+	   
+}
+
+.statements_autor{
+	float: right;
+	font-size: 10px;
+	   
+}
+
+.menulink a{
+ font-size: 12px;
+ font-style: italic;
+ font-size: 20px;
+ color: #ffffff; 
+ text-shadow: black 1px 1px 2px;
+}
+
+.flag{
+	box-shadow: black 1px 1px 2px;
 }
