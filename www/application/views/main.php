@@ -27,50 +27,58 @@
 <div id="wrapper">
 
 	<div id="header">
-		<h1>ВинограД!</h1>
-		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru">ru</a></li>
-      		 <a href="<?php echo URL::base();?>main/langChange/En">en</a></li>
-       		 <a href="<?php echo URL::base();?>main/langChange/Kz">kz</a></li></div>
-		<div id="slider">SLIDER</div>
+		<div class ="link_main">
+			<a class="link" href='<?php echo URL::base();?>'> </a>
+		</div>
+		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Ru.jpg" class="flag"></a>
+      		 <a href="<?php echo URL::base();?>main/langChange/En"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Eng.jpg" class="flag"></a>
+       		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" class="flag"></a></div>
+		
 	</div><!-- #header-->
+	<div id="header_slider">SLIDER</div>
 	<div id="middle">
 
 		<div id="container">
 			<div id="content">
 				<h1>CONTENT</h1>
 				    <?php echo $content?>
-		<a href="#" class="expand">Expand column</a>			</div><!-- #content-->
+		</div><!-- #content-->
 		</div><!-- #container-->
 
 		<div class="sidebar" id="sideLeft">
 			<?php if(!Auth::instance()->logged_in()):?>
 			<div id="menu_block">
-				<h2>LEFT</h2>
-				<p><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
-				<p>Галерея</p>
-				<p>Отзывы</p> 
-				<p>контакты</p>
+				<br/>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">Галерея</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">Отзывы</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>
 			<?php endif?>
 			<?php if(Auth::instance()->logged_in()):?>
 			<div id="admin_menu_block" >
 				<br/>
-				<p class="menu_link menu_link_solo"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
-				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
-				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Галерея</a></p> 
-				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Информация</a></p>
-				<p class="menu_link"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
-				<p class="menu_link"> <a href="<?php echo URL::base();?>/admin/image_view">Выход</a></p>
-			<?php endif?>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Галерея</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Информация</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
+				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/image_view">Выход</a></p>
 			</div>
+			<?php endif?>
 			
+			<div class="statements">
+				<span class="statements_caption">Заголовок</span>
+				<p>текст текст текст текст текст текст текст текст текст текст текст текст</p>
+				<span class="statements_autor"> Автор</span>
+			</div>
 		</div><!-- .sidebar#sideLeft -->
 
 	</div><!-- #middle-->
 
 	<div id="footer">
 		<div id="footer_line">тест</div>
-		<br/>
+		</br>
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
