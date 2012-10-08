@@ -2,7 +2,12 @@
 
 class Model_Recall extends ORM { 
 
-    
+    protected $_has_one = array(
+        'reply' => array(
+            'model' => 'reply',
+            'foreign_key' => 'recall_id',
+        ),
+    );
 
 public function rules()
     {

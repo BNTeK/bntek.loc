@@ -191,29 +191,7 @@ class Controller_Admin extends Controller_Common {
 
   } 
 
-  public function action_image_view()
-  {
-      $this->check_role();
-      
-      $page = $this->request->param('page');
-
-    $q = "SELECT `images`.`id`, images.`name` FROM `images`";
-    $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-    $total = count($model);
-    $pagination = Pagination::factory( array(
-      'current_page' => array('source' => 'route', 'key' => 'page'),
-      'total_items' => $total,
-      'items_per_page' => 1,
-      'auto_hide' => false,
-      'view' => 'pagination/forkohana',
-      'first_page_in_url' => TRUE,
-      ))
-      ->route_params( array(
-        'controller' => Request::current()->controller(),
-        'action' => Request::current()->action(),
-      ));
-    $this->template->content= View::factory('admin/viewimage')->bind('pagination',$pagination)->bind('model', $model)->bind('id',$page);
-  } 
+  
 
 
   public function action_image_del()
@@ -253,7 +231,7 @@ class Controller_Admin extends Controller_Common {
         if($model->loaded()){
           $model->delete();
           $ref = $this->request->referrer();
-          $this->request->redirect(URL::site($ref));
+          $this->request->redirect('main/recall');
         }
     }
 
@@ -261,33 +239,44 @@ class Controller_Admin extends Controller_Common {
     public function action_recall_reply()
     {
       $this->check_role();
-
+      $action = $this->request->action();
       $id = $this->request->param('id');
         $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
           $reply = ORM::factory('reply');
+
           $this->template->content= View::factory('admin/reply')
           ->bind('errors', $errors)
           ->bind('data', $data)
+          ->bind('answer', $answer)
+          ->bind('action', $action)
           ->bind('data_reply', $data_reply);
             $data[] = array('name' => $model->name,
                             'email' => $model->email,
                             'theme' => $model->theme,
                             'text'=> $model->text,
                             'post_time' => $model->post_time,
-                            'id' => $model->id);
-            $check = ORM::factory('reply')->where('id','=',$id)->limit(1)->find();
-           if($check->id !== NULL) $data_reply['text'] = $check->text;
+                            'id' => $model->id,);
+            if($model->reply->id > 0)
+          {
+            $answer['text'] = $model->reply->text;
+            $answer['time'] = $model->reply->post_time;
+          } 
+
+          }                                                                                                                     
+            $check = ORM::factory('reply')->where('recall_id','=',$id )->limit(1)->find();
+           if($check->loaded()) $data_reply['text'] = $check->text;
            if ( ! isset($_POST['submit'])) return;
           $post = Arr::extract($_POST, array('text'),null);
           $post['post_time'] = time();
-
+          
            if(!$check->id)
            {
             try {
-            $reply->id = $id;
             $reply->values($post);
-            $reply->save();
+            $reply->recall_id = $id;
+            $reply->save();                                                                   
+            
                 }
        catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('models'); 
@@ -305,7 +294,7 @@ class Controller_Admin extends Controller_Common {
      }
     }
 
-}
+
 
 public function action_page_add()
 {

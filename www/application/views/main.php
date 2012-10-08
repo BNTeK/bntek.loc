@@ -35,12 +35,18 @@
        		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" ></a></div>
 		
 	</div><!-- #header-->
-	<div id="header_slider">SLIDER</div>
+	<div id="header_slider">
+		<?php echo View::factory('site/slider')->bind('img', $slider_data);?>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/><br/><br/><br/><br/><br/>
+	</div>
 	<div id="middle">
 
 		<div id="container">
 			<div id="content">
-				<h1>CONTENT</h1>
 				    <?php echo $content?>
 		</div><!-- #content-->
 		</div><!-- #container-->
@@ -50,7 +56,7 @@
 			<div id="menu_block">
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">Галерея</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/image_view/page/1">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/recall/">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>
@@ -60,8 +66,8 @@
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Галерея</a></p> 
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Информация</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view/page/1">Галерея</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/page_add">Информация</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
 				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/logout">Выход</a></p>
 			</div>
