@@ -131,9 +131,13 @@ input {
 }
 
 #header_slider{
-	height: 350px;
+	height: auto;	
+	background: url('../img/style_img/slider_bg.jpg');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 
 .lang{
 	float: right;

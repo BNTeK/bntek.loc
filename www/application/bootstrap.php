@@ -118,7 +118,7 @@ Kohana::modules(array(
  * defaults for the URI.
  */
 
-Route::set('img', '(<controller>(/<action>(/<id>)))(/page)(/<page>)', array('page'=>'[0-9]+'))
+Route::set('image_view', '(<controller>(/<action>(/<id>)))(/page)(/<page>)', array('page'=>'[0-9]+'))
   ->defaults(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',

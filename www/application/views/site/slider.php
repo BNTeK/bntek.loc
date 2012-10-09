@@ -4,8 +4,7 @@
 			<div class="slide-wrap">
 				<?php foreach($img as $value):?>
 				<div class="slide-item">
-					<img width="200" height="150" src="<?php echo URL::base();?>img/<?php echo $value->name;?>" alt="" />
-					<span class="slide-title"><?php echo $value->name;?></span>
+					<img width="170" src="<?php echo URL::base();?>img/<?php echo $value->name;?>" alt="" />
 				</div>
 				<?php endforeach ?>
 				

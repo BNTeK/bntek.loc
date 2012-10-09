@@ -60,23 +60,22 @@ class Controller_Main extends Controller_Common {
   public function action_image_view()
   {
 
-      $page = $this->request->param('page');
-
-    $q = "SELECT `images`.`id`, images.`name` FROM `images`";
-    $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-    $total = count($model);
-    $pagination = Pagination::factory( array(
+     $q = "SELECT `id`, `name`, `alt` FROM `images` WHERE `home` = 0";
+     $model = DB::query(Database::SELECT, $q)->execute()->as_array();
+     $total = count($model);
+     echo $total;
+     $pagination = Pagination::factory( array(
       'current_page' => array('source' => 'route', 'key' => 'page'),
       'total_items' => $total,
-      'items_per_page' => 1,
+      'items_per_page' => 5,
       'auto_hide' => false,
       'view' => 'pagination/forkohana',
-      'first_page_in_url' => TRUE,
+      'first_page_in_url' => true
       ))
       ->route_params( array(
         'controller' => Request::current()->controller(),
         'action' => Request::current()->action(),
       ));
-    $this->template->content= View::factory('admin/viewimage')->bind('pagination',$pagination)->bind('model', $model)->bind('id',$page);
+    $this->template->content= View::factory('site/fancybox')->bind('pagination',$pagination)->bind('model', $model)->bind('id',$page);
   } 
 } // End Page

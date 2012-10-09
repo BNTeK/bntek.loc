@@ -154,7 +154,6 @@ class Controller_Admin extends Controller_Common {
     $this->template->content= View::factory('admin/addimage')
     ->bind('errors', $errors);
     if ( ! isset($_POST['submit'])) return;
-          var_dump($_POST);
            // Создание объекта валидации
                 $validate = Validation::factory($_FILES);
  

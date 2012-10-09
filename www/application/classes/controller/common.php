@@ -11,13 +11,14 @@ abstract class Controller_Common extends Controller_Template {
         View::set_global('description', 'Описание сайта');
         $this->session = session::instance();
         $this->template->content = '';
-        $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','style','slider');
-        $this->template->scripts = array('jquery.min','bootstrap.min');
+        $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','slider','nf.lightbox','style');
+        $this->template->scripts = array('jquery.min','bootstrap.min','NFLightBox');
         I18n::lang($source = 'sys');
         I18n::lang('ru');        
         $this->session->set('lang','ru');
         $slider_data = ORM::factory('image')->where('home','=',1)->find_all();
         View::set_global('slider_data', $slider_data); 
+        
 
         }
  
