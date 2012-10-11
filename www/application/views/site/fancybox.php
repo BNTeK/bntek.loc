@@ -5,7 +5,6 @@
             $('#gallery a').lightBox(settings);
         });
     </script>
-
     <style type="text/css">
         #gallery
         {
@@ -36,6 +35,7 @@
             color: #fff;
         }
     </style>
+    <div>
     <div id="gallery">
         <ul>
 <?php if(isset($model)):?>    
@@ -46,11 +46,10 @@
     <?php endforeach?>
 <?php endif?>
         </ul>
+        
     </div>
-
-    <?php echo $pagination?>;
-
-
+       <?php echo $pagination?>
+</div>
 
 <script type="text/javascript">
 $('a').lightBox({

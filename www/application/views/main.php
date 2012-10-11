@@ -79,7 +79,6 @@
 
 	<div id="footer">
 		<div id="footer_line">тест</div>
-		</br>
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->

@@ -59,17 +59,17 @@ class Controller_Main extends Controller_Common {
 
   public function action_image_view()
   {
+    $id = $this->request->param('id');
 
      $q = "SELECT `id`, `name`, `alt` FROM `images` WHERE `home` = 0";
      $model = DB::query(Database::SELECT, $q)->execute()->as_array();
      $total = count($model);
-     echo $total;
      $pagination = Pagination::factory( array(
       'current_page' => array('source' => 'route', 'key' => 'page'),
       'total_items' => $total,
-      'items_per_page' => 5,
+      'items_per_page' => 1,
       'auto_hide' => false,
-      'view' => 'pagination/forkohana',
+      'view' => 'pagination/basic',
       'first_page_in_url' => true
       ))
       ->route_params( array(
