@@ -57,25 +57,30 @@ class Controller_Main extends Controller_Common {
 
   }
 
-  public function action_image_view()
-  {
-    $id = $this->request->param('id');
+    public function action_image_view()
+    {
+        $page = $this->request->param('img');
 
-     $q = "SELECT `id`, `name`, `alt` FROM `images` WHERE `home` = 0";
-     $model = DB::query(Database::SELECT, $q)->execute()->as_array();
-     $total = count($model);
-     $pagination = Pagination::factory( array(
-      'current_page' => array('source' => 'route', 'key' => 'page'),
-      'total_items' => $total,
-      'items_per_page' => 1,
-      'auto_hide' => false,
-      'view' => 'pagination/basic',
-      'first_page_in_url' => true
-      ))
-      ->route_params( array(
-        'controller' => Request::current()->controller(),
-        'action' => Request::current()->action(),
-      ));
-    $this->template->content= View::factory('site/fancybox')->bind('pagination',$pagination)->bind('model', $model)->bind('id',$page);
-  } 
+        if($page < 2) $page = 0;
+        else $page = $page - 1;
+        
+        $total = ORM::factory('image')->count_all();
+        $photo = ORM::factory('image')->offset($page)->limit(1)->find();
+
+        View::set_global('title', $photo->alt);
+
+        $pagination = Pagination::factory( array('total_items' => $total, 'items_per_page' => 1));
+
+        $this->template->content = View::factory('site/fancybox')
+            ->bind('pagination', $pagination)
+            ->bind('photo', $photo);
+    }
+
+    public function action_all_photos()
+    {
+        $all = ORM::factory('image')->find_all();
+        $this->template->content = View::factory('site/all_photos')
+            ->set('all', $all);
+    }
+
 } // End Page

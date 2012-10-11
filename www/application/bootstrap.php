@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-    'base_url'   => 'http://bntek.loc',
+    'base_url'   => 'http://vinograd/',
     'index_file' => FALSE
 ));
 
@@ -118,13 +118,23 @@ Kohana::modules(array(
  * defaults for the URI.
  */
 
-Route::set('image_view', '(<controller>(/<action>(/<id>)))(/page)(/<page>)', array('page'=>'[0-9]+'))
+/*Route::set('image_view', '(<controller>(/<action>(/<id>)))(/page)(/<page>)', array('page'=>'[0-9]+'))
   ->defaults(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',
-  ));
+  ));*/
+Route::set('gallery_all', 'gallery/all')
+  ->defaults(array(
+    'controller' => 'main',
+    'action'     => 'all_photos',
+));	
+Route::set('gallery', 'gallery(/<img>)', array('img' => '[0-9]+'))
+  ->defaults(array(
+    'controller' => 'main',
+    'action'     => 'image_view',
+));	
 Route::set('default', '(<controller>(/<action>(/<id>)))')
-	->defaults(array(
-		'controller' => 'main',
-		'action'     => 'index',
-	));																																																																			 
+  ->defaults(array(
+    'controller' => 'main',
+    'action'     => 'index',
+));																																																																		 

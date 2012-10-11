@@ -7,7 +7,7 @@ abstract class Controller_Common extends Controller_Template {
     {
        
         parent::before();
-        View::set_global('title', 'Титл сайта');				
+        View::set_global('title', 'Титл сайта');
         View::set_global('description', 'Описание сайта');
         $this->session = session::instance();
         $this->template->content = '';
