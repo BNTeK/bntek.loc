@@ -243,24 +243,13 @@ class Controller_Admin extends Controller_Common {
         $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
         if($model->loaded()){
           $reply = ORM::factory('reply');
-
           $this->template->content= View::factory('admin/reply')
           ->bind('errors', $errors)
-          ->bind('data', $data)
+          ->bind('model', $model)
           ->bind('answer', $answer)
           ->bind('action', $action)
           ->bind('data_reply', $data_reply);
-            $data[] = array('name' => $model->name,
-                            'email' => $model->email,
-                            'theme' => $model->theme,
-                            'text'=> $model->text,
-                            'post_time' => $model->post_time,
-                            'id' => $model->id,);
-            if($model->reply->id > 0)
-          {
-            $answer['text'] = $model->reply->text;
-            $answer['time'] = $model->reply->post_time;
-          } 
+          
 
           }                                                                                                                     
             $check = ORM::factory('reply')->where('recall_id','=',$id )->limit(1)->find();
@@ -293,6 +282,20 @@ class Controller_Admin extends Controller_Common {
      }
     }
 
+    public function action_recall_status()
+    {
+       $this->check_role();
+
+          $id = $this->request->param('id');
+          $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
+        if($model->loaded()){
+          $model->status = 1;
+          $model->save();
+          $ref = $this->request->referrer();
+          $this->request->redirect('main/recall');
+        }
+    }
+
 
 
 public function action_page_add()
@@ -303,6 +306,16 @@ public function action_page_add()
 $editor = editor::factory('CKEditor');
   $this->template->content= View::factory('admin/page_add')->bind('editor',$editor);
    if ( ! isset($_POST['submit'])) return;
+   $post = Arr::extract($_POST, array('caption','radio','ckeditor'),null);
+   
+   $file= "../public/pages/".time()."php";
+    //если файла нету... тогда
+    if( !file_exists($file)) {
+      $fp = fopen($file, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту), мы создаем файл
+      fwrite($fp, $post['ckeditor']);
+      fclose ($fp);
+    }
+
 }
 
 public function action_logout()
@@ -312,3 +325,4 @@ public function action_logout()
     }          
 
 } // End Page
+

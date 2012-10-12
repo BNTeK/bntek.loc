@@ -26,23 +26,26 @@ class Controller_Main extends Controller_Common {
     
     public function action_recall()
   {
-        $action = $this->request->action();
-        $model = ORM::factory('recall');
-      
-      $this->template->content= View::factory('site/recall_send')
-      ->bind('errors', $errors)
-      ->bind('model', $model)
-      ->bind('action', $action);
+
+         if(!$this->auth->logged_in()){
+                $model = ORM::factory('recall')->where('status','=',1)->find_all();
+            }
+              else{
+                $model = ORM::factory('recall')->find_all();
+            }
+
+          $action = $this->request->action();
+          $send = ORM::factory('recall');
+          $this->template->content= View::factory('site/recall_send')
+          ->bind('errors', $errors)
+          ->bind('model', $model)
+          ->bind('action', $action);
       if ( ! isset($_POST['submit'])) return;
      
       $post = Arr::extract($_POST, array('name','email','theme','text'),null);
        $postadd = array('status' => 0, 'post_time'=> time());
        $post = Arr::merge($post, $postadd);
-      if($model->reply->id > 0)
-          {
-            $answer['text'] = $model->reply->text;
-            $answer['time'] = $model->reply->post_time;
-          } 
+
       try {
         $send->values($post);
         $send->save();
@@ -51,7 +54,7 @@ class Controller_Main extends Controller_Common {
         $errors = $e->errors('models');
       
       }
-
+      
       $ref = $this->request->referrer();
       $this->request->redirect(URL::site($ref));
 
