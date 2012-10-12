@@ -20,7 +20,7 @@ abstract class Controller_Common extends Controller_Template {
         View::set_global('slider_data', $slider_data); 
         $this->auth = Auth::instance();
         $this->template->auth = $this->auth;
-
+        
         }
  
   

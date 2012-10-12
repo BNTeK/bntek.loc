@@ -266,3 +266,16 @@ input {
 	margin-right: auto;
 	margin-left: 30px;
 }
+
+.static_home p{
+	float: left;
+	font-size: 15px;
+	font-style: italic;
+	
+}
+
+.rightimg  {
+	margin-right: 20px !important;
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
