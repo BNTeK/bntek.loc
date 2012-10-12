@@ -19,10 +19,8 @@ abstract class Controller_Common extends Controller_Template {
         $slider_data = ORM::factory('image')->where('home','=',1)->find_all();
         View::set_global('slider_data', $slider_data);
 
-        $this->template->auth = Auth::instance();
-
-        
-
+        $this->auth = Auth::instance();
+        $this->template->auth = $this->auth;
     }
  
   

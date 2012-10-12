@@ -59,7 +59,7 @@
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_add">Галерея</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::site('image');?>">Галерея</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/page_add">Информация</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
 				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/logout">Выход</a></p>
