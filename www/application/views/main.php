@@ -51,7 +51,7 @@
 			<div id="menu_block">
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/image_view">Галерея</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/recall/">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>

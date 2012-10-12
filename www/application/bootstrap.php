@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-    'base_url'   => 'http://vinograd.kz/',
+    'base_url'   => 'http://vinograd/',
     'index_file' => FALSE
 ));
 

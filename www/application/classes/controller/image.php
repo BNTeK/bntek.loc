@@ -40,10 +40,10 @@ class Controller_Image extends Controller_Common {
     		$del_photo = ORM::factory('image')->where('id', '=', $del_id)->find();
     		if(isset($del_photo->id))
     		{
-    			unlink('img/'.$del_photo->name);
+                $del_name = 'img/'.$del_photo->name;
     			$del_photo->delete();
+                unlink($del_name);
     		}
-
     	}
 
     	if(isset($id)) //вьюшка кнопки для удаления
