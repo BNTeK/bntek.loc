@@ -4,8 +4,8 @@ class Controller_Main extends Controller_Common {
     
      public function action_index ()
     {
-         //$this->template->content = View::factory('site/home');
-//         ->bind('img',$img);
+         $this->template->content= View::factory('site/home')
+         ->bind('img',$img);
          
          
     }
