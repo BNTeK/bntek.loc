@@ -30,9 +30,7 @@
 		<div class ="link_main">
 			<a class="link" href='<?php echo URL::base();?>'> </a>
 		</div>
-		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Ru.jpg" ></a>
-      		 <a href="<?php echo URL::base();?>main/langChange/En"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Eng.jpg" ></a>
-       		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" ></a></div>
+		
 		
 	</div><!-- #header-->
 	<div id="header_slider">
@@ -42,21 +40,21 @@
 
 		<div id="container">
 			<div id="content">
-				    <?php echo $content?>
-		</div><!-- #content-->
+				    <?php echo $content; ?>
+			</div><!-- #content-->
 		</div><!-- #container-->
 
 		<div class="sidebar" id="sideLeft">
-			<?php if(!Auth::instance()->logged_in()):?>
+			<?php if(!$auth->logged_in('login')):?>
 			<div id="menu_block">
 				<br/>
-				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/image_view">Галерея</a></p>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('main/menu');?>">Меню</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery/all');?>">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/recall/">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>
 			<?php endif?>
-			<?php if(Auth::instance()->logged_in()):?>
+			<?php if($auth->logged_in('admin')):?>
 			<div id="admin_menu_block" >
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
