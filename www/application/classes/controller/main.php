@@ -25,9 +25,10 @@ class Controller_Main extends Controller_Common {
   }
     
     public function action_recall()
-  {
+    {
 
-         if(!$this->auth->logged_in()){
+        if(!$this->auth->logged_in())
+        {
                 $model = ORM::factory('recall')->where('status','=',1)->find_all();
             }
               else{
@@ -58,7 +59,8 @@ class Controller_Main extends Controller_Common {
       $ref = $this->request->referrer();
       $this->request->redirect(URL::site($ref));
 
-  }
+
+    }
 
     public function action_image_view()
     {
