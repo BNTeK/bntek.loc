@@ -308,13 +308,6 @@ $editor = editor::factory('CKEditor');
    if ( ! isset($_POST['submit'])) return;
    $post = Arr::extract($_POST, array('caption','radio','ckeditor'),null);
    
-   $file= "../public/pages/".time()."php";
-    //если файла нету... тогда
-    if( !file_exists($file)) {
-      $fp = fopen($file, "w"); // ("r" - считывать "w" - создавать "a" - добовлять к тексту), мы создаем файл
-      fwrite($fp, $post['ckeditor']);
-      fclose ($fp);
-    }
 
 }
 

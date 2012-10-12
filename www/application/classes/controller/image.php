@@ -36,15 +36,72 @@ class Controller_Image extends Controller_Common {
 
     	if(isset($_POST['del'])) //удаляем
     	{
-    		$del_id = Arr::get($_POST, 'id');
+    		$del_id = Arr::get($_POST, 'id', 0);
     		$del_photo = ORM::factory('image')->where('id', '=', $del_id)->find();
     		if(isset($del_photo->id))
     		{
                 $del_name = 'img/'.$del_photo->name;
     			$del_photo->delete();
                 unlink($del_name);
+                $msg = 'Фотограия удалена';
     		}
     	}
+
+        if(isset($_POST['home']))
+        {
+            $home_id = Arr::get($_POST, 'id', 0);
+            $home_photo = ORM::factory('image')->where('id', '=', $home_id)->find();
+            if(isset($home_photo->id))
+            {
+                if($home_photo->home == 0)
+                {
+                    $home_photo->home = 1;
+                    $msg = 'Фотография добавлена на главную';
+                }
+                else
+                {
+                    $home_photo->home = 0;
+                    $msg = 'Фотография больше не будет показан на главной';
+                }                    
+
+                $home_photo->update();
+                
+            }
+        }
+
+        if(isset($_POST['cover']))
+        {
+
+            $cover_id = Arr::get($_POST, 'id', 0);
+            $img = ORM::factory('image')->where('id', '=', $cover_id)->find();
+            if(isset($img->id))
+            {
+                $album = $img->album;
+                $album->cover_id = $cover_id;
+                $album->update();
+                $msg = 'Новая обложка назначена';
+            }
+        }
+
+        if(isset($_POST['del_this_album']) AND isset($id))
+        {
+            $del_album = ORM::factory('album')->where('id', '=', $id)->find();
+            if(isset($del_album)) //альбом существует
+            {
+                $photos = $del_album->photos->find_all();
+
+                foreach ($photos as $item) {
+                    unlink('img/'.$item->name);
+                    $del_photo = ORM::factory('image')->where('id', '=', $item->id)->find();
+                    $del_photo->delete();
+                }
+                $del_album->delete();
+
+                $this->request->redirect('image/albums');
+
+            }
+
+        }
 
     	if(isset($id)) //вьюшка кнопки для удаления
     	{
@@ -54,7 +111,8 @@ class Controller_Image extends Controller_Common {
     			$photos = $album->photos->find_all();
     			$this->template->content = View::factory('admin/image/one_album')
     				->set('album', $album)
-    				->set('photos', $photos);
+    				->set('photos', $photos)
+                    ->bind('msg', $msg);
     		}
     		else
     		{

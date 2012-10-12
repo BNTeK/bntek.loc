@@ -47,7 +47,7 @@
 		</div><!-- #container-->
 
 		<div class="sidebar" id="sideLeft">
-			<?php if(!Auth::instance()->logged_in()):?>
+			<?php if(!$auth->logged_in()):?>
 			<div id="menu_block">
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
@@ -56,7 +56,7 @@
 				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
 			</div>
 			<?php endif?>
-			<?php if(Auth::instance()->logged_in()):?>
+			<?php if($auth->logged_in()):?>
 			<div id="admin_menu_block" >
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>

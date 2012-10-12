@@ -38,7 +38,11 @@ input {
 	box-shadow: 0 0 50px rgba(0,0,0,0.8); /* Параметры тени */
 
 }
-
+.divclear {
+	clear: both;
+	height: 0px;
+	font-size: 1px;
+}
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -265,4 +269,33 @@ input {
 	box-shadow: 0 10px 50px rgba(0,0,0,0.8);
 	margin-right: auto;
 	margin-left: 30px;
+}
+
+.static_home p{
+	float: left;
+	font-size: 15px;
+	font-style: italic;
+	
+}
+
+.rightimg  {
+	margin-right: 20px !important;
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
+
+
+
+.all_albums {
+
+}
+.all_albums img {
+	max-width: 100px;
+	max-height: 100px;
+}
+.one_album {
+	float: left;
+	margin: 10px;
+	height: 150px;
 }

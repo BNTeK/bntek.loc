@@ -124,6 +124,12 @@ Kohana::modules(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',
   ));*/
+Route::set('admin_image', 'image')
+    ->defaults(array(
+        'controller' => 'image',
+        'action'     => 'albums',
+    )
+); 
 Route::set('gallery_all', 'gallery/all')
   ->defaults(array(
     'controller' => 'main',

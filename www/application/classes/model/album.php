@@ -7,5 +7,11 @@ class Model_Album extends ORM {
 	    	'model'=>'image',
 	        'foreign_key'=>'album_id',
 	      )
-    ); 
+    );
+    protected $_belongs_to = array(
+	    'cover' => array(
+	        'model' => 'image',
+	        'foreign_key' => 'cover_id'
+	    )
+    );
 }

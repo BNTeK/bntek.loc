@@ -281,6 +281,6 @@ ALTER TABLE `user_tokens`
 CREATE TABLE IF NOT EXISTS `albums` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
-  `cover` int(11) NOT NULL,
+  `cover_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
