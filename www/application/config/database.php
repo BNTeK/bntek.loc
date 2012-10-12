@@ -42,7 +42,7 @@ return array
 			 */
 			'dsn'        => 'mysql:host=localhost;dbname=vinograd',
 			'username'   => 'root',
-			'password'   => '',
+			'password'   => 'root',
 			'persistent' => FALSE,
 		),
 		/**

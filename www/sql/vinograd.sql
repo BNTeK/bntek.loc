@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Окт 06 2012 г., 17:09
+-- Время создания: Окт 12 2012 г., 17:45
 -- Версия сервера: 5.5.24
 -- Версия PHP: 5.3.10-1ubuntu3.3
 
@@ -90,16 +90,48 @@ CREATE TABLE IF NOT EXISTS `images` (
   `rel` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `home` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
 
 --
 -- Дамп данных таблицы `images`
 --
 
 INSERT INTO `images` (`id`, `name`, `alt`, `rel`, `home`) VALUES
-(5, '1349421476.jpg', 'Отображаемое имя', '', 0),
+(5, '1349421476.jpg', 'Отображаемое имя', '', 1),
 (6, '1349422108.jpg', 'Отображаемое имя', '', 0),
-(7, '1349422134.jpg', 'Отображаемое имя', '', 0);
+(7, '1349422134.jpg', 'Отображаемое имя', '', 0),
+(8, '1349765953.jpg', 'Отображаемое имя', '', 0),
+(9, '1349765959.jpg', 'Отображаемое имя', '', 1),
+(10, '1349765988.jpg', 'Отображаемое имя', '', 0),
+(11, '1349781803.jpg', '', '', 1),
+(12, '1349781811.jpg', '', '', 1),
+(13, '1349781818.jpg', '', '', 1),
+(14, '1349781827.jpg', '', '', 1),
+(15, '1349781840.jpg', '', '', 1),
+(16, '1349781856.jpg', '', '', 0),
+(17, '1349784032.jpg', 'Fuck', '', 0),
+(18, '1349784041.jpg', 'Fuck', '', 0),
+(19, '1349784084.jpg', 'Отображаемое имя', '', 0),
+(20, '1349784088.jpg', 'Отображаемое имя', '', 0),
+(21, '1349784090.jpg', 'Отображаемое имя', '', 0),
+(22, '1349784092.jpg', 'Fuck', '', 0),
+(23, '1349784095.jpg', 'Fuck', '', 0),
+(24, '1349784099.jpg', 'Fuck', '', 0),
+(25, '1349784114.jpg', 'Fuck', '', 0),
+(26, '1349784117.jpg', 'Fuck', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `pages`
+--
+
+CREATE TABLE IF NOT EXISTS `pages` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `file_name` varchar(128) NOT NULL,
+  `position` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -115,15 +147,19 @@ CREATE TABLE IF NOT EXISTS `recalls` (
   `text` text COLLATE utf8_bin NOT NULL,
   `post_time` int(11) NOT NULL,
   `status` tinyint(1) NOT NULL,
+  ` id_reply` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=9 ;
 
 --
 -- Дамп данных таблицы `recalls`
 --
 
-INSERT INTO `recalls` (`id`, `name`, `email`, `theme`, `text`, `post_time`, `status`) VALUES
-(1, 'uralsk.kz', 'bntek@mail.kz', 'qweq', 'qweew', 1349429963, 0);
+INSERT INTO `recalls` (`id`, `name`, `email`, `theme`, `text`, `post_time`, `status`, ` id_reply`) VALUES
+(1, 'uralsk.kz', 'bntek@mail.kz', 'qweq', 'qweew', 1349429963, 0, 0),
+(6, 'Виталий', 'BNTeKKZ@gmail.com', 'Мне очень у вас понравилось', 'Мне очень у вас понравилось! прям ОЧЕНЬ ОЧЕНЬ! ^_^', 1349697882, 1, 0),
+(7, 'asd', 'BNTeKKZ@gmail.com', 'asd', 'asdasd', 1350024433, 1, 0),
+(8, 'asd', 'BNTeKKZ@gmail.com', 'asd', 'asdasd', 1350024444, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -135,6 +171,7 @@ CREATE TABLE IF NOT EXISTS `replies` (
   `id` int(11) unsigned NOT NULL,
   `text` text COLLATE utf8_bin NOT NULL,
   `post_time` int(11) NOT NULL,
+  `recall_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_replies_recalls1` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -143,8 +180,9 @@ CREATE TABLE IF NOT EXISTS `replies` (
 -- Дамп данных таблицы `replies`
 --
 
-INSERT INTO `replies` (`id`, `text`, `post_time`) VALUES
-(1, 'sasasa', 1349521081);
+INSERT INTO `replies` (`id`, `text`, `post_time`, `recall_id`) VALUES
+(0, 'Мы очень рады', 1350032646, 6),
+(1, 'sasasa', 1349521081, 0);
 
 -- --------------------------------------------------------
 
@@ -219,12 +257,6 @@ CREATE TABLE IF NOT EXISTS `user_tokens` (
 --
 ALTER TABLE `cookmenus`
   ADD CONSTRAINT `cookmenus_ibfk_1` FOREIGN KEY (`categories`) REFERENCES `categories` (`id`);
-
---
--- Ограничения внешнего ключа таблицы `replies`
---
-ALTER TABLE `replies`
-  ADD CONSTRAINT `fk_replies_recalls1` FOREIGN KEY (`id`) REFERENCES `recalls` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Ограничения внешнего ключа таблицы `roles_users`

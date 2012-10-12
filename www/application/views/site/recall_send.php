@@ -1,5 +1,5 @@
-<?php echo View::factory('admin/recallcheck')->bind('model',$model)->bind('action',$action);?>
-<div>
+<?php echo View::factory('admin/recallcheck')->bind('model',array('1'=>$model))->bind('action',$action);?>
+<div class="recall">
 	<form method="POST">
 		<div class="input-prepend">
               <span class="add-on">@</span>

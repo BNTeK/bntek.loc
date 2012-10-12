@@ -10,28 +10,31 @@ abstract class Controller_Common extends Controller_Template {
         View::set_global('title', 'Титл сайта');
         View::set_global('description', 'Описание сайта');
         $this->session = session::instance();
-        $this->template->content = '&nbsp;';
+        $this->template->content = '';
         $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','slider','nf.lightbox','style');
         $this->template->scripts = array('jquery.min','bootstrap.min','NFLightBox');
         I18n::lang($source = 'sys');
         I18n::lang('ru');        
         $this->session->set('lang','ru');
         $slider_data = ORM::factory('image')->where('home','=',1)->find_all();
-        View::set_global('slider_data', $slider_data);
+        View::set_global('slider_data', $slider_data); 
+        $this->auth = Auth::instance();
+        $this->template->auth = $this->auth;
 
         $this->auth = Auth::instance();
         $this->template->auth = $this->auth;
     }
+
  
   
-    static public function check_role()
-    {
-        if(!Auth::instance()->logged_in())
-            {throw new HTTP_Exception_404();}
-        else {
-            return FALSE;
+     static public function check_role()
+        {
+            if(!Auth::instance()->logged_in())
+                {throw new HTTP_Exception_404();}
+            else {
+                return FALSE;
+            }
         }
-    }
 
         static public function url_back()
         {

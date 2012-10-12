@@ -1,4 +1,4 @@
-<?php echo View::factory('admin/recallcheck')->bind('model',$data)->bind('answer',$answer)->bind('action',$action);?>
+<?php $a = array(); $a[] = $model; echo View::factory('admin/recallcheck')->bind('model',$a)->bind('action',$action);?>
 
 <div>
 	<form method="POST">
