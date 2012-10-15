@@ -69,10 +69,9 @@ class Controller_Admin extends Controller_Common {
         ->bind('model',$model)
         ->bind('lang', $lang)
         ->bind('category',$category);
-        $category = DB::select('id','сname'.$lang)->from('categories')->execute()->as_array();
+        $category = DB::select('id','cname_'.$lang)->from('categories')->execute()->as_array();
         if ( ! isset($_POST['submit'])) return;
-        $post = Arr::extract($_POST, array('nameRU','nameEN','nameKZ','cost','remarkRU','remarkEN','remarkKZ','categories'),null);
-       
+        $post = Arr::extract($_POST, array('name_ru','name_en','name_kz','cost','remark_ru','remark_en','remark_kz','categories'),null);
       try {
         $model->values($post);
         $model->save();
@@ -136,15 +135,7 @@ class Controller_Admin extends Controller_Common {
 
   }
 
-  public function getmenu()
-  {
-      
-      $lang = $this->session->get('lang');
-      $q = "SELECT `cookmenus`.`id`, `cname_".$lang."`,`cost` , `cookmenus`.`name_" . $lang  . "`,`cookmenus`.`remark_".$lang."` FROM `cookmenus` LEFT JOIN `categories` ON `cookmenus`.`categories` = `categories`.`id`";
-      $result = DB::query(Database::SELECT, $q)->execute()->as_array();
-      
-            return $result;
-  }
+  
 
   public function action_image_add()
   {
@@ -304,20 +295,45 @@ class Controller_Admin extends Controller_Common {
         }
     }
 
+public function action_info()
+{
+    $this->check_role();
 
 
-public function action_page_add()
+   
+
+}
+
+public function action_news_add()
 {
     $this->check_role();
 
   // create default editor instance 500x300
 $editor = editor::factory('CKEditor');
-  $this->template->content= View::factory('admin/page_add')->bind('editor',$editor);
-   if ( ! isset($_POST['submit'])) return;
-   $post = Arr::extract($_POST, array('caption','radio','ckeditor'),null);
+  $this->template->content= View::factory('admin/info/info_add')
+  ->bind('editor',$editor)
+  ->bind('model',$model)
+  ->bind('error', $errors);
+  $post = Arr::extract($_POST, array('caption','position','ckeditor'),null);
+  $model = ORM::factory('page');
+  $post['text'] = $post['ckeditor'];
+  unset($post['ckeditor']);
+   if ( ! isset($_POST['submit'])) return;  
+   try {
+            $model->values($post);
+            $model->save();                                                                   
+            
+                }
+       catch (ORM_Validation_Exception $e) {
+        $errors = $e->errors('models'); 
+      }
+  
    
 
 }
+
+
+
 
 public function action_logout()
     {

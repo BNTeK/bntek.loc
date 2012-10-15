@@ -8,15 +8,6 @@ class Model_Category extends ORM {
     	return array(
             'cname_ru' => array(
                 array('not_empty'),
-                
-                ),
-            'cname_en' => array(
-                array('not_empty'),
-                
-                ),
-            'cname_kz' => array(
-                array('not_empty'),
-                
                 ),
             );
 

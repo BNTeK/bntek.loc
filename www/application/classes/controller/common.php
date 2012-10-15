@@ -48,5 +48,20 @@ abstract class Controller_Common extends Controller_Template {
             $ref = $this->request->referrer();
             $this->request->redirect(URL::site($ref));
         }
+
+        public function getmenu()
+  {
+      
+      $lang = $this->session->get('lang');
+      $q = "SELECT `categories`.`id` `cid`, `cookmenus`.`id`, `cname_".$lang."`,`cost` , `cookmenus`.`name_" . $lang  . "`,`cookmenus`.`remark_".$lang."` FROM `cookmenus` LEFT JOIN `categories` ON `cookmenus`.`categories` = `categories`.`id`";
+      $result = DB::query(Database::SELECT, $q)->execute()->as_array();
+      $final = array();
+      foreach ($result as $item) {
+          $final[$item['cid']]['cname_'.$lang] = $item['cname_'.$lang];
+          $final[$item['cid']][] = $item;
+        //echo debug::vars($item);
+      }
+            return $final;
+  }
   
 }

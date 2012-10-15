@@ -10,31 +10,12 @@ class Model_Cookmenu extends ORM {
                 array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 array('max_length',array(':value', 128)),
                 ),
-            'name_en' => array(
-                array('not_empty'),
-                array('regex', array(':value', '/^[\pL\s.]++$/uD')),
-                array('max_length',array(':value', 128)),
-                ),
-            'name_kz' => array(
-                array('not_empty'),
-                array('regex', array(':value', '/^[\pL\s.]++$/uD')),
-                array('max_length',array(':value', 128)),
-                ),
             'cost' => array(
                 array('not_empty'),
                 array('numeric'),
                 ),
             'remark_ru' => array(
                 array('not_empty'),
-                array('regex', array(':value', '/^[\pL\s.]++$/uD')),
-                ),
-            'remark_en' => array(
-                array('not_empty'),
-                array('regex', array(':value', '/^[\pL\s.]++$/uD')),
-                ),
-            'remark_kz' => array(
-                array('not_empty'),
-                array('regex', array(':value', '/^[\pL\s.]++$/uD')),
                 ),
             );
 	
