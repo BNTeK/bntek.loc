@@ -12,9 +12,6 @@ class Controller_Main extends Controller_Common {
          $this->template->content= View::factory('site/home')
          ->bind('model', $data);
 
-         
-         
-    }
 
     public function action_menu()
     {   $lang = $this->session->get('lang');
@@ -72,7 +69,7 @@ class Controller_Main extends Controller_Common {
 
     }
 
-    public function action_image_view()
+   /* public function action_image_view()
     {
         $page = $this->request->param('img');
 
@@ -89,13 +86,26 @@ class Controller_Main extends Controller_Common {
         $this->template->content = View::factory('site/fancybox')
             ->bind('pagination', $pagination)
             ->bind('photo', $photo);
+    }*/
+
+    public function action_photos()
+    {
+        $id = $this->request->param('id');
+        $album = ORM::factory('album')->where('id', '=', $id)->find();
+        $photos = $album->photos->find_all();
+
+
+        $this->template->content = View::factory('image/all_photos')
+            ->set('all', $photos)
+            ->set('album', $album);
     }
 
-    public function action_all_photos()
+    public function action_albums()
     {
-        $all = ORM::factory('image')->find_all();
-        $this->template->content = View::factory('site/all_photos')
-            ->set('all', $all);
+        $albums = ORM::factory('album')->find_all();
+        $this->template->content = View::factory('image/all_albums')
+            ->set('albums', $albums);
     }
+
 
 } // End Page

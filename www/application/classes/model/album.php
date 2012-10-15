@@ -14,4 +14,5 @@ class Model_Album extends ORM {
 	        'foreign_key' => 'cover_id'
 	    )
     );
+    
 }

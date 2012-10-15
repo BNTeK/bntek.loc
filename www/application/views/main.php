@@ -19,7 +19,10 @@
     
 <?php foreach ($scripts as $script): ?>
     <script src="<?php echo URL::base(); ?>public/js/<?php echo $script?>.js" type="text/javascript"></script>
-      <?php endforeach; ?>
+<?php endforeach; ?>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -31,10 +34,9 @@
 			<a class="link" href='<?php echo URL::base();?>'> </a>
 		</div>
 		
-		
 	</div><!-- #header-->
 	<div id="header_slider">
-		<?php echo View::factory('site/slider')->bind('img', $slider_data);?>
+		<?php echo $slider;?>
 	</div>
 	<div id="middle">
 
@@ -50,19 +52,19 @@
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/recall/">Отзывы</a></p> 
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>main/menu/">контакты</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('main/recall');?>">Отзывы</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::site('main/menu');?>">контакты</a></p>
 			</div>
 			<?php endif?>
 			<?php if($auth->logged_in()):?>
 			<div id="admin_menu_block" >
 				<br/>
-				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>/admin/cookmenu_add">Меню</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/category_add">Категории</a></p>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base('admin/cookmenu_add');?>">Меню</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/category_add');?>">Категории</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('image');?>">Галерея</a></p> 
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/page_add">Информация</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base();?>/admin/image_view">Контакты</a></p>
-				<p class="menu_link menulink"> <a href="<?php echo URL::base();?>/admin/logout">Выход</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/page_add');?>">Информация</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::base('admin/image_view');?>">Контакты</a></p>
+				<p class="menu_link menulink"> <a href="<?php echo URL::base('admin/logout');?>">Выход</a></p>
 			</div>
 			<?php endif?>
 			
@@ -80,6 +82,30 @@
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
+<script type="text/javascript">
+$(document).ready(function() {
 
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
 </body>
 </html>

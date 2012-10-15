@@ -1,6 +1,6 @@
 <div>
     <img src="<?php echo URL::site('img/'.$photo->name);?>" alt="" />
-       <?php echo $pagination?>
+       <?php echo $pagination: ?>
 </div>
 
 

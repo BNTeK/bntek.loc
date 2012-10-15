@@ -129,16 +129,22 @@ Route::set('admin_image', 'image')
         'controller' => 'image',
         'action'     => 'albums',
     )
-); 
-Route::set('gallery_all', 'gallery/all')
+);
+Route::set('admin_photos', 'photos')
+    ->defaults(array(
+        'controller' => 'image',
+        'action'     => 'photos',
+    )
+);
+Route::set('gallery_all', 'album/<id>', array('id' => '[0-9]+'))
   ->defaults(array(
     'controller' => 'main',
-    'action'     => 'all_photos',
+    'action'     => 'photos',
 ));	
 Route::set('gallery', 'gallery(/<img>)', array('img' => '[0-9]+'))
   ->defaults(array(
     'controller' => 'main',
-    'action'     => 'image_view',
+    'action'     => 'albums',
 ));	
 Route::set('default', '(<controller>(/<action>(/<id>)))')
   ->defaults(array(
