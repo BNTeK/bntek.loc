@@ -237,49 +237,57 @@ class Controller_Admin extends Controller_Common {
 
     public function action_recall_reply()
     {
-      $this->check_role();
-      $action = $this->request->action();
-      $id = $this->request->param('id');
-        $model = ORM::factory('recall')->where('id','=',$id)->limit(1)->find();
-        if($model->loaded()){
-          $reply = ORM::factory('reply');
-          $this->template->content= View::factory('admin/reply')
-          ->bind('errors', $errors)
-          ->bind('model', $model)
-          ->bind('answer', $answer)
-          ->bind('action', $action)
-          ->bind('data_reply', $data_reply);
+        $this->check_role();
+        $action = $this->request->action();
+        $id = $this->request->param('id');
+        $model = ORM::factory('recall')->where('id', '=', $id)->limit(1)->find();
+        
+        if($model->loaded())
+        {
+            $reply = ORM::factory('reply');
+            $this->template->content= View::factory('admin/reply')
+                ->bind('errors', $errors)
+                ->bind('model', $model)
+                ->bind('answer', $answer)
+                ->bind('action', $action)
+                ->bind('data_reply', $data_reply);
+        }
+        
+        $check = ORM::factory('reply')->where('recall_id', '=', $id )->limit(1)->find();
+        
+        if($check->loaded())
+            $data_reply['text'] = $check->text;
+        
+        if ( ! isset($_POST['submit'])) return;
+        
+        $post = Arr::extract($_POST, array('text'), NULL);
+        $post['post_time'] = time();
           
-
-          }                                                                                                                     
-            $check = ORM::factory('reply')->where('recall_id','=',$id )->limit(1)->find();
-           if($check->loaded()) $data_reply['text'] = $check->text;
-           if ( ! isset($_POST['submit'])) return;
-          $post = Arr::extract($_POST, array('text'),null);
-          $post['post_time'] = time();
-          
-           if(!$check->id)
-           {
-            try {
-            $reply->values($post);
-            $reply->recall_id = $id;
-            $reply->save();                                                                   
-            
-                }
-       catch (ORM_Validation_Exception $e) {
-        $errors = $e->errors('models'); 
-      }
-     }
-     else{
-
-          try {
-            $check->values($post);
-            $check->save();
-                }
-       catch (ORM_Validation_Exception $e) {
-        $errors = $e->errors('models'); 
-      }
-     }
+        if(!$check->id)
+        {
+            try
+            {
+                $reply->values($post);
+                $reply->recall_id = $id;
+                $reply->save();
+            }
+            catch (ORM_Validation_Exception $e)
+            {
+                $errors = $e->errors('models'); 
+            }
+        }
+        else
+        {
+            try
+            {
+                $check->values($post);
+                $check->save();
+            }
+            catch (ORM_Validation_Exception $e)
+            {
+                $errors = $e->errors('models'); 
+            }
+        }
     }
 
     public function action_recall_status()

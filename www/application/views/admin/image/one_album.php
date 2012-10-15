@@ -18,6 +18,7 @@
 	<br>
 <?php endforeach; ?>
 <br><br>
+
 <form action="" method="POST">
-	<p><input type="submit" name="del_this_album" value="удалить весь альбом" class="btn btn-danger"></p>
+	<p> <a class="btn btn-info" href="<?php echo URL::site('photos'); ?>">добавить фото</a> <input type="submit" name="del_this_album" value="удалить весь альбом" class="btn btn-danger"></p>
 </form>

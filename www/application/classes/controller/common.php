@@ -10,20 +10,25 @@ abstract class Controller_Common extends Controller_Template {
         View::set_global('title', 'Титл сайта');
         View::set_global('description', 'Описание сайта');
         $this->session = session::instance();
+        
         $this->template->content = '';
+        $this->template->slider = '';
         $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','slider','nf.lightbox','style');
         $this->template->scripts = array('jquery.min','bootstrap.min','NFLightBox');
+        $this->session->set('lang','ru');
+
         I18n::lang($source = 'sys');
         I18n::lang('ru');        
-        $this->session->set('lang','ru');
-        $slider_data = ORM::factory('image')->where('home','=',1)->find_all();
-        View::set_global('slider_data', $slider_data); 
-
-        
-
 
         $this->auth = Auth::instance();
         $this->template->auth = $this->auth;
+    }
+
+    public function after()
+    {
+        $slider_data = ORM::factory('image')->where('home','=',1)->find_all();
+        $this->template->slider = View::factory('site/slider')->bind('img', $slider_data);
+        parent::after();
     }
 
 

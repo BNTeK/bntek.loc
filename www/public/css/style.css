@@ -291,11 +291,21 @@ input {
 
 }
 .all_albums img {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 150px;
+	max-height: 150px;
 }
 .one_album {
 	float: left;
 	margin: 10px;
-	height: 150px;
+	height: 180px;
+}
+.one_album p {
+	margin-top: 5px;
+}
+.one_album p a {
+	text-decoration: underline;
+}
+.good_h1 {
+	font: italic 33px Georgia, Verdana, Arial, sans-serif;
+	margin: 20px 0 20px 10px;
 }
