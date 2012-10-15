@@ -7,9 +7,9 @@
 	</div>
 	<div>
 		<label for="news">Новость:</label>
-		<input type="radio" name="radio[]" value="1"/>
+		<input type="radio" name="position" value="1"/>
 		<label for="event">Акция:</label>
-		<input type="radio" name="radio[]" value="2"/>
+		<input type="radio" name="position" value="2"/>
 	</div>
 		<br/>
 		<p><?php  echo Form::submit('submit', 'Сохранить') ?></p>

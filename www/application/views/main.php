@@ -30,9 +30,7 @@
 		<div class ="link_main">
 			<a class="link" href='<?php echo URL::base();?>'> </a>
 		</div>
-		<div class="lang"><a href="<?php echo URL::base();?>main/langChange/Ru"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Ru.jpg" ></a>
-      		 <a href="<?php echo URL::base();?>main/langChange/En"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Eng.jpg" ></a>
-       		 <a href="<?php echo URL::base();?>main/langChange/Kz"><img src="<?php echo URL::base();?>/public/img/style_img/flags/Kaz.jpg" ></a></div>
+		
 		
 	</div><!-- #header-->
 	<div id="header_slider">

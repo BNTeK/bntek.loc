@@ -3,16 +3,26 @@
 class Controller_Main extends Controller_Common {
     
      public function action_index ()
-    {
+    {    $model = DB::select('id','caption','position', 'text')->from('pages')->execute()->as_array();
+         // $model= ORM::factory('page')->find_all()->as_array();
+         foreach ($model as  $value) {
+           if($value['position'] == 1) $data['news'][]= $value;
+           if($value['position'] == 2) $data['events'][] = $value;
+         }
          $this->template->content= View::factory('site/home')
-         ->bind('img',$img);
+         ->bind('model', $data);
+
          
          
     }
 
     public function action_menu()
-    {
-        $this->template->content= View::factory('site/menu'); 
+    {   $lang = $this->session->get('lang');
+        $menu = $this->getmenu();
+        //echo debug::vars($menu);
+        $this->template->content= View::factory('admin/view_menu')
+        ->bind('menu', $menu)
+        ->bind('lang', $lang);
     }
     public function action_langChange()
   {

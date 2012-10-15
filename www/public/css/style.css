@@ -299,3 +299,33 @@ input {
 	margin: 10px;
 	height: 150px;
 }
+
+.Mname{
+  background-color: #b8b8b8;  
+  font-size: 15px;
+  font-weight: bold;
+}
+.Mcost{
+
+  height: 20px;
+  
+
+}
+
+.Mcname{
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.Mnumcost{
+	float: right;
+	color: #ff9600;
+  font-size: 20px;
+}
+
+.menu_block{
+	margin: 5px;
+	background:#F7F7F7;
+}
