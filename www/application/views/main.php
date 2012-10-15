@@ -63,6 +63,7 @@
 				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/category_add');?>">Категории</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('image');?>">Галерея</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/page_add');?>">Информация</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('quote');?>">Цитаты</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::base('admin/image_view');?>">Контакты</a></p>
 				<p class="menu_link menulink"> <a href="<?php echo URL::base('admin/logout');?>">Выход</a></p>
 			</div>

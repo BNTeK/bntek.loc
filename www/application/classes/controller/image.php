@@ -10,7 +10,7 @@ class Controller_Image extends Controller_Common {
     
     public function action_index()
     {
-
+        die();
     }
 
     public function action_albums()

@@ -11,7 +11,7 @@ abstract class Controller_Common extends Controller_Template {
         View::set_global('description', 'Описание сайта');
         $this->session = session::instance();
         
-        $this->template->content = '';
+        $this->template->content = '&nbsp;';
         $this->template->slider = '';
         $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','slider','nf.lightbox','style');
         $this->template->scripts = array('jquery.min','bootstrap.min','NFLightBox');

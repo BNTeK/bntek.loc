@@ -25,6 +25,14 @@ SET time_zone = "+00:00";
 --
 -- Структура таблицы `albums`
 --
+CREATE TABLE IF NOT EXISTS `quotes` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) NOT NULL,
+  `text` varchar(1000) NOT NULL,
+  `autor` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE IF NOT EXISTS `albums` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
