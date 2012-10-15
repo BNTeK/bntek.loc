@@ -23,9 +23,19 @@ class Controller_Quote extends Controller_Common {
     		$msg = 'Цитата добавлена';
     	}
 
+    	if(isset($_POST['del']))
+    	{
+    		$id = Arr::get($_POST, 'id');
+    		$del_quote = ORM::factory('quote')->where('id', '=', $id)->find();
+    		if(isset($del_quote->id))
+    		{
+    			$del_quote->delete();
+    		}
+    	}
+
     	
 
-    	$quote = ORM::factory('quote')->find_all();
+    	$quote = ORM::factory('quote')->order_by('id', 'DESC')->find_all();
 
     	$all_quote = View::factory('admin/quote/all')
     		->set('quote', $quote)
@@ -41,7 +51,21 @@ class Controller_Quote extends Controller_Common {
     {
     	$id = $this->request->param('id');
 
-    	echo Debug::vars($id);
+    	if(isset($_POST['edit']))
+    	{
+    		$data = Arr::extract($_POST, array('title', 'text', 'autor'));
+
+    		$edit_quote = ORM::factory('quote')->where('id', '=', $id)->find();
+    		$edit_quote->values($data);
+    		$edit_quote->update();
+    		$this->request->redirect(URL::site('quote'));
+    	}
+
+    	$quote = ORM::factory('quote')->where('id', '=', $id)->find()->as_array();
+    	$edit_form = View::factory('admin/quote/edit_form')
+    		->set('data', $quote);
+
+    	$this->template->content = $edit_form;
     }
 
 }

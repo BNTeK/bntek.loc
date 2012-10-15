@@ -11,10 +11,11 @@ class Controller_Main extends Controller_Common {
          }
          $this->template->content= View::factory('site/home')
          ->bind('model', $data);
-
+    }
 
     public function action_menu()
-    {   $lang = $this->session->get('lang');
+    {   
+        $lang = $this->session->get('lang');
         $menu = $this->getmenu();
         //echo debug::vars($menu);
         $this->template->content= View::factory('admin/view_menu')

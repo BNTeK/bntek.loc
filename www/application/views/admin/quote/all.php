@@ -16,7 +16,7 @@
 		<td><?php echo $item->text; ?></td>
 		<td><?php echo $item->autor; ?></td>
 		<td>
-			<form> <a class="btn" href="<?php echo URL::site('quote/edit').'/'.$item->id; ?>">редактировать</a>
+			<form action="" method="POST"> <a class="btn" href="<?php echo URL::site('quote/edit').'/'.$item->id; ?>">редактировать</a>
 				<input type="hidden" name="id" value="<?php echo $item->id; ?>">
 				<input type="submit" class="btn" name="del" value="удалить">
 			</form>
