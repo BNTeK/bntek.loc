@@ -339,3 +339,35 @@ input {
 	font: italic 33px Georgia, Verdana, Arial, sans-serif;
 	margin: 20px 0 20px 10px;
 }
+
+
+.contacts h1 {
+	font: italic 33px Georgia, Verdana, Arial, sans-serif;
+	margin: 10px 0 20px 0;
+	color: #222;
+}
+.contacts p {
+	color: #666;
+	font-size: 16px;
+}
+.contacts p span {
+	color: #444;
+	font-size: 18px;
+}
+
+.f_left {
+	float: left;
+	margin: 15px 0 0 5px;
+}
+.f_right {
+	float: right;
+	margin: 5px;
+}
+.f_right p {
+	margin: 0;
+}
+
+.inptlbl {
+	width: 50px !important;
+	text-align: left !important;
+}

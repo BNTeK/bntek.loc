@@ -4,11 +4,9 @@
 			<div class="slide-wrap">
 				<?php foreach($img as $value):?>
 				<div class="slide-item">
-					<img width="170" src="<?php echo URL::base();?>img/<?php echo $value->name;?>" alt="" />
+					<a href="<?php echo URL::base();?>img/<?php echo $value->name;?>" id="single_image" ><img width="170" src="<?php echo URL::base();?>img/<?php echo $value->name;?>" alt="" /></a>
 				</div>
 				<?php endforeach ?>
-				
-				
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -17,5 +15,4 @@
 		<div class="auto play"></div>
 	</div>
 </div>
-
 <script src="<?php echo URL::base(); ?>public/js/slider.js"></script>

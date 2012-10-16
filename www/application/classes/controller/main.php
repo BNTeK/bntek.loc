@@ -35,39 +35,43 @@ class Controller_Main extends Controller_Common {
     public function action_recall()
     {
 
-        if(!$this->auth->logged_in())
+        if($this->auth->logged_in())
         {
-                $model = ORM::factory('recall')->where('status','=',1)->find_all();
-            }
-              else{
-                $model = ORM::factory('recall')->find_all();
-            }
+            $model = ORM::factory('recall')->find_all();            
+        }
+        else
+        {
+            $model = ORM::factory('recall')->where('status','=',1)->find_all();            
+        }
 
-          $action = $this->request->action();
-          $send = ORM::factory('recall');
-          $this->template->content= View::factory('site/recall_send')
-          ->bind('errors', $errors)
-          ->bind('model', $model)
-          ->bind('action', $action);
-      if ( ! isset($_POST['submit'])) return;
+        $action = $this->request->action();
+        $send = ORM::factory('recall');
+
+        $this->template->content = View::factory('admin/recallcheck')
+            ->bind('model',$model)
+            ->bind('action',$action).View::factory('site/recall_send')
+                ->bind('errors', $errors)
+                ->bind('model', $model)
+                ->bind('action', $action);
+
+        if ( ! isset($_POST['submit'])) return;
      
-      $post = Arr::extract($_POST, array('name','email','theme','text'),null);
-       $postadd = array('status' => 0, 'post_time'=> time());
-       $post = Arr::merge($post, $postadd);
+        $post = Arr::extract($_POST, array('name','email','theme','text'),null);
+        $postadd = array('status' => 0, 'post_time'=> time());
+        $post = Arr::merge($post, $postadd);
 
-      try {
-        $send->values($post);
-        $send->save();
-        
-      } catch (ORM_Validation_Exception $e) {
-        $errors = $e->errors('models');
+        try
+        {
+            $send->values($post);
+            $send->save();
+        }
+        catch (ORM_Validation_Exception $e)
+        {
+            $errors = $e->errors('models');      
+        }
       
-      }
-      
-      $ref = $this->request->referrer();
-      $this->request->redirect(URL::site($ref));
-
-
+        $ref = $this->request->referrer();
+        $this->request->redirect(URL::site($ref));
     }
 
    /* public function action_image_view()
