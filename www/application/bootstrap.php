@@ -127,6 +127,12 @@ Kohana::modules(array(
     'action'     => 'image_view																																																																',
   ));*/
 
+Route::set('reviews', 'reviews')
+    ->defaults(array(
+        'controller' => 'main',
+        'action'     => 'recall',
+    )
+);
 Route::set('contact', 'contact')
     ->defaults(array(
         'controller' => 'main',
