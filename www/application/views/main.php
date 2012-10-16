@@ -52,7 +52,7 @@
 				<br/>
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('main/menu');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::site('main/recall');?>">Отзывы</a></p> 
+				<p class="menu_link menulink"><a href="<?php echo URL::site('reviews');?>">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::site('contact');?>">Контакты</a></p>
 			</div>
 			<?php endif?>
@@ -76,7 +76,14 @@
 	</div><!-- #middle-->
 
 	<div id="footer">
-		<div id="footer_line">тест</div>
+		<div id="footer_line">
+			<div class="f_left">&copy;&nbsp;Restaurant VinoGrad, 2012. Сделано в&nbsp;веб-студии &laquo;<a href="http://reka.kz/">Река</a>&raquo;</div>
+			<div class="f_right">
+				<p>Адрес: г.Уральск, 4мкрн, дом 12/2</p>
+				<p>Телефоны: 8 (71-12) 22-78-08, 221-221</p>
+			</div>
+			<div class="divclear"></div>
+		</div>
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->

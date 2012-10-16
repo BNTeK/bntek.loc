@@ -22,7 +22,7 @@ else
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/timezones
  */
-date_default_timezone_set('America/Chicago');
+date_default_timezone_set('Asia/Oral');
 
 /**
  * Set the default locale.
@@ -30,7 +30,7 @@ date_default_timezone_set('America/Chicago');
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/function.setlocale
  */
-setlocale(LC_ALL, 'en_US.utf-8');
+setlocale(LC_ALL, 'ru_RU.utf-8');
 
 /**
  * Enable the Kohana auto-loader.
@@ -126,13 +126,19 @@ Kohana::modules(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',
   ));*/
+
+Route::set('reviews', 'reviews')
+    ->defaults(array(
+        'controller' => 'main',
+        'action'     => 'recall',
+    )
+);
 Route::set('contact', 'contact')
     ->defaults(array(
         'controller' => 'main',
         'action'     => 'contact',
     )
 );
-
 Route::set('admin_image', 'image')
     ->defaults(array(
         'controller' => 'image',
@@ -160,4 +166,5 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
     'controller' => 'main',
     'action'     => 'index',
 ));
+
 set_exception_handler(array('Exceptionhandler', 'handle'));
