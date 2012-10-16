@@ -109,4 +109,11 @@ class Controller_Main extends Controller_Common {
     }
 
 
+    public function action_contact()
+    {
+        $this->template->content = View::factory('contact');
+
+    }
+
+
 } // End Page

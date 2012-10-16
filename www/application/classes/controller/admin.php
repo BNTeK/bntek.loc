@@ -309,7 +309,7 @@ public function action_news_add()
     $this->check_role();
 
   // create default editor instance 500x300
-$editor = editor::factory('CKEditor');
+    $editor = editor::factory('CKEditor');
   $this->template->content= View::factory('admin/info/info_add')
   ->bind('editor',$editor)
   ->bind('model',$model)
@@ -335,10 +335,10 @@ $editor = editor::factory('CKEditor');
 
 
 
-public function action_logout()
+    public function action_logout()
     {
         Auth::instance()->logout(TRUE);
-        $this->request->redirect(URL::site('main/index'));
+        $this->request->redirect(URL::base());
     }          
 
 } // End Page

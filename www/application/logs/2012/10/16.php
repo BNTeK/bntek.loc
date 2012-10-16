@@ -1547,3 +1547,1024 @@
 --
 #0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-10-16 01:41:55 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:41:55 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:41:55 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:41:55 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:42:28 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:42:28 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:42:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:42:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:42:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:42:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:42:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:42:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 01:42:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 01:42:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:46 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:46 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:56 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:56 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:56 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:56 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:56 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:56 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:02:59 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:02:59 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:03:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:03:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:03:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:03:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:07:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:07:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:07:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:07:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:04 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:04 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:04 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:04 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:13 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:13 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:13 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:13 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:10:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:10:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:17:56 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:17:56 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:17:56 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:17:56 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:18:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:18:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:18:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:18:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:18:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:18:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:18:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:18:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:03 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:03 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:03 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:03 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:10 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:10 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:19:10 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:19:10 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:01 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:01 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:20 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:20 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:20 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:20 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:21 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:21 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:21 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:21 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:22 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:22 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:22 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:22 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:23 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:23 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:23 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:23 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:20:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:20:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:21:46 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:21:46 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:21:46 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:21:46 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:21:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:21:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:22:09 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:22:09 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:22:10 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:22:10 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:22:11 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:22:11 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:22:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:22:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:22:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:22:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:44 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:44 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:44 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:44 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:47 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:47 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:47 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:47 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:48 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:48 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:48 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:48 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:49 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:49 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:49 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:49 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:54 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:54 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:23:54 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:23:54 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:04 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:04 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:04 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:04 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:05 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:05 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:05 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:05 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:07 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:07 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:07 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:07 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:10 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:10 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:10 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:10 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:22 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:22 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:22 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:22 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:28 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:28 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:28 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:28 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:32 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:32 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:34 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:34 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:34 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:34 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:42 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:42 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:42 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:42 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:43 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:43 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:44 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:44 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:24:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:24:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:47 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:47 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:47 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:47 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:55 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:55 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:28:55 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:28:55 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:29:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:29:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: public/css/ourstyle.css ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:29:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:29:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:39:25 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:39:25 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:39:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:39:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:40:30 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:40:30 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:40:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:40:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:40:30 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:40:30 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:40:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:40:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:40:31 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:40:31 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:40:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:40:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:18 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:18 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:18 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:18 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:24 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:24 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:24 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:24 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:25 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:25 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:25 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:25 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:53 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:53 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:53 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:53 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:54 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:54 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:54 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:54 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:54 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:54 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:54 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:54 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:41:58 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:41:58 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:41:58 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:41:58 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:42:23 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:42:23 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:42:23 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:42:23 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:42:29 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:42:29 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:42:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:42:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:42:29 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:42:29 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL ывыв was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:42:29 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:42:29 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:42:35 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:42:35 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:42:35 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:42:35 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:43:17 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:43:17 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:43:17 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:43:17 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:45:40 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-10-16 02:45:40 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL sdsd was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#2 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-10-16 02:45:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+2012-10-16 02:45:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1142 ]
+--
+#0 /Users/alx/vhosts/vinograd.kz/serv/bntek.loc/www/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-10-16 02:50:59 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:50:59 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:51:05 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:51:05 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:18 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:18 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:19 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:19 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:20 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:20 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:20 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:20 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:23 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:23 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:23 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:23 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:55:43 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:55:43 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:56:42 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:56:42 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:58:40 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:58:40 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:59:55 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:59:55 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:59:55 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:59:55 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 02:59:56 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 02:59:56 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 03:00:06 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 03:00:06 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-10-16 04:02:16 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+2012-10-16 04:02:16 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_RETURN ~ APPPATH/classes/controller/common.php [ 74 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}

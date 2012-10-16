@@ -1,3 +1,6 @@
+<?php if(isset($msg)): ?>
+	<div class="alert alert-info"><?php echo $msg; ?></div>
+<?php endif; ?>
 <?php foreach($albums as $item): ?>
 	<div class="all_albums">
 		<div class="one_album">

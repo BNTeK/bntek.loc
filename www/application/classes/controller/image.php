@@ -26,7 +26,8 @@ class Controller_Image extends Controller_Common {
     		try
     		{
     			$new_album->create();
-    			$this->request->redirect(URL::site('image/albums'));
+    			//$this->request->redirect(URL::site('image/albums'));
+                $msg = 'Добавлен фотоальбом';
     		}
     		catch (ORM_Validation_Exception $e)
             {
@@ -125,7 +126,8 @@ class Controller_Image extends Controller_Common {
     	{
     		$albums = ORM::factory('album')->find_all();
 	    	$this->template->content = View::factory('admin/image/all_albums')
-	    		->set('albums', $albums).
+	    		->set('albums', $albums)
+                ->bind('msg', $msg).
 	    		View::factory('admin/image/add_album');
     	}
     }

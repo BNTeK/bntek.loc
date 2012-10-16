@@ -53,7 +53,7 @@
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('main/menu');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('main/recall');?>">Отзывы</a></p> 
-				<p class="menu_link menulink"><a href="<?php echo URL::site('main/menu');?>">контакты</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('contact');?>">Контакты</a></p>
 			</div>
 			<?php endif?>
 			<?php if($auth->logged_in()):?>
@@ -62,9 +62,8 @@
 				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('admin/cookmenu_add');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/category_add');?>">Категории</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('image');?>">Галерея</a></p> 
-				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/page_add');?>">Информация</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/news_add');?>">Информация</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('quote');?>">Цитаты</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::site('admin');?>">Контакты</a></p>
 				<p class="menu_link menulink"> <a href="<?php echo URL::site('admin/logout');?>">Выход</a></p>
 			</div>
 			<?php endif?>

@@ -81,9 +81,11 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
+ini_set('display_errors', 0);
 Kohana::init(array(
     'base_url'   => 'http://vinograd/',
-    'index_file' => FALSE
+    'index_file' => FALSE,
+    'errors' => TRUE,
 ));
 
 /**
@@ -124,6 +126,13 @@ Kohana::modules(array(
     'controller' => 'admin',
     'action'     => 'image_view																																																																',
   ));*/
+Route::set('contact', 'contact')
+    ->defaults(array(
+        'controller' => 'main',
+        'action'     => 'contact',
+    )
+);
+
 Route::set('admin_image', 'image')
     ->defaults(array(
         'controller' => 'image',
@@ -150,4 +159,5 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
   ->defaults(array(
     'controller' => 'main',
     'action'     => 'index',
-));																																																																		 
+));
+set_exception_handler(array('Exceptionhandler', 'handle'));

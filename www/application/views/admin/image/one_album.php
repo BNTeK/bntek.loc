@@ -1,8 +1,6 @@
 <h1><?php echo $album->title; ?></h1>
 <?php if(isset($msg)): ?>
-	<div class="alert alert-info"><?php echo $msg; ?>
-		<form>
-		</form></div>
+	<div class="alert alert-info"><?php echo $msg; ?></div>
 <?php endif; ?>
 <?php foreach ($photos as $item): ?>
 	<img src="<?php echo URL::site('img').'/'.$item->name; ?>" alt="<?php echo $item->alt; ?>">
