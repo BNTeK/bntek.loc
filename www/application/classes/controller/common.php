@@ -13,6 +13,7 @@ abstract class Controller_Common extends Controller_Template {
         
         $this->template->content = '&nbsp;';
         $this->template->slider = '';
+        $this->template->quote = $this->get_quote();
         $this->template->styles = array('bootstrap.min', 'bootstrap-responsive.min','ourstyle','slider','nf.lightbox','style');
         $this->template->scripts = array('jquery.min','bootstrap.min','NFLightBox');
         $this->session->set('lang','ru');
@@ -49,8 +50,8 @@ abstract class Controller_Common extends Controller_Template {
             $this->request->redirect(URL::site($ref));
         }
 
-        public function getmenu()
-  {
+    public function getmenu()
+    {
       
       $lang = $this->session->get('lang');
       $q = "SELECT `categories`.`id` `cid`, `cookmenus`.`id`, `cname_".$lang."`,`cost` , `cookmenus`.`name_" . $lang  . "`,`cookmenus`.`remark_".$lang."` FROM `cookmenus` LEFT JOIN `categories` ON `cookmenus`.`categories` = `categories`.`id`";
@@ -62,6 +63,17 @@ abstract class Controller_Common extends Controller_Template {
         //echo debug::vars($item);
       }
             return $final;
-  }
+    }
+
+    public function get_quote()
+    {
+        $count = ORM::factory('quote')->count_all() - 1;
+        $offset = rand(0, $count);
+        $quote = ORM::factory('quote')->offset($offset)->find();
+
+        return View::factory('site/quote_index')->set('quote', $quote);
+    }
+
+
   
 }

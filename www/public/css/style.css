@@ -161,7 +161,6 @@ input {
 
 .statements{
 	background-color: #e8d9c4;
-	height: 200px;
 	width: 230px;
 	margin-left: 15px;
 	font-style: italic;
@@ -171,12 +170,12 @@ input {
 
 .statements_caption{
 	float: center;
-	font-size: 18px;
-	   
+	font-size: 20px;
+	margin-bottom: 1	0px;	   
 }
 
 .statements_autor{
-	float: right;
+	text-align: right;
 	font-size: 10px;
 	   
 }

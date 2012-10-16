@@ -14,6 +14,6 @@
               <input class="span3" name="theme" size="20" type="text" placeholder="<?php echo __('theme')?>"><span class="error"><?php if(isset($errors['theme'])) echo $errors['theme']; ?></span>
         </div>
         <div><textarea rows="5" class="span5" name="text" size="255"></textarea><span class="error"><?php if(isset($errors['text'])) echo $errors['text']; ?></span></div>
-		<?php  echo Form::submit('submit', 'Отправить') ?>
+    <p><input type="submit" name="submit" value="Отправить" /></p>
 	</form>
 </div>

@@ -50,7 +50,7 @@
 			<?php if(!$auth->logged_in()):?>
 			<div id="menu_block">
 				<br/>
-				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base();?>main/menu/">Меню</a></p>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('main/menu');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('gallery');?>">Галерея</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('main/recall');?>">Отзывы</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::site('main/menu');?>">контакты</a></p>
@@ -59,20 +59,18 @@
 			<?php if($auth->logged_in()):?>
 			<div id="admin_menu_block" >
 				<br/>
-				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::base('admin/cookmenu_add');?>">Меню</a></p>
+				<p class="menu_link menu_link_solo menulink"><a href="<?php echo URL::site('admin/cookmenu_add');?>">Меню</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/category_add');?>">Категории</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('image');?>">Галерея</a></p> 
 				<p class="menu_link menulink"><a href="<?php echo URL::site('admin/page_add');?>">Информация</a></p>
 				<p class="menu_link menulink"><a href="<?php echo URL::site('quote');?>">Цитаты</a></p>
-				<p class="menu_link menulink"><a href="<?php echo URL::base('admin/image_view');?>">Контакты</a></p>
-				<p class="menu_link menulink"> <a href="<?php echo URL::base('admin/logout');?>">Выход</a></p>
+				<p class="menu_link menulink"><a href="<?php echo URL::site('admin');?>">Контакты</a></p>
+				<p class="menu_link menulink"> <a href="<?php echo URL::site('admin/logout');?>">Выход</a></p>
 			</div>
 			<?php endif?>
 			
 			<div class="statements">
-				<span class="statements_caption">Заголовок</span>
-				<p>текст текст текст текст текст текст текст текст текст текст текст текст</p>
-				<span class="statements_autor"> Автор</span>
+				<?php echo $quote; ?>
 			</div>
 		</div><!-- .sidebar#sideLeft -->
 
