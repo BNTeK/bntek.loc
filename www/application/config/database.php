@@ -21,7 +21,7 @@ return array
 			'hostname'   => 'localhost',
 			'database'   => 'vinograd',
 			'username'   => 'root',
-			'password'   => 'root',
+			'password'   => '',
 			'persistent' => FALSE,
 		),
 		'table_prefix' => '',
@@ -42,7 +42,7 @@ return array
 			 */
 			'dsn'        => 'mysql:host=localhost;dbname=vinograd',
 			'username'   => 'root',
-			'password'   => 'root',
+			'password'   => '',
 			'persistent' => FALSE,
 		),
 		/**

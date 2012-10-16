@@ -270,11 +270,12 @@ input {
 	margin-left: 30px;
 }
 
-.static_home p{
+.static_home {
 	float: left;
 	font-size: 15px;
 	font-style: italic;
-	
+	height: 200px;
+	margin-bottom: 10px !important;
 }
 
 .rightimg  {
@@ -338,4 +339,27 @@ input {
 .good_h1 {
 	font: italic 33px Georgia, Verdana, Arial, sans-serif;
 	margin: 20px 0 20px 10px;
+}
+
+
+
+.news_text{
+	font-size: 14px;
+
+}
+
+.news_caption{
+	font-size: 18px;
+}
+
+.news_block{
+	margin-top: 20px;
+}
+
+.news_caption_line{
+	margin-top: 25px;
+	background: #DBDBDB;
+}
+.home_block{
+	margin-top: 200px !important;
 }
