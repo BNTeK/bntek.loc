@@ -49,8 +49,8 @@ spl_autoload_register(array('Kohana', 'auto_load'));
 ini_set('unserialize_callback_func', 'spl_autoload_call');
 
 // -- Configuration and initialization -----------------------------------------
-//Kohana::$environment = Kohana::PRODUCTION;
-Kohana::$environment = Kohana::DEVELOPMENT;
+Kohana::$environment = Kohana::PRODUCTION;
+//Kohana::$environment = Kohana::DEVELOPMENT;
 if (Kohana::$environment == Kohana::PRODUCTION) ini_set('display_errors', 0);
 
 /**
@@ -86,7 +86,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 
-    'base_url'   => 'http://vinograd.kz/',
+    'base_url'   => 'http://vinograd/',
     'index_file' => FALSE,
     'errors' => TRUE,
 ));

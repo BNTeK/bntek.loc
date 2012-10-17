@@ -13,6 +13,7 @@ class Controller_Main extends Controller_Common {
 
     public function action_menu()
     {   
+        $this->template->title = 'Меню ресторана VinoGrad';
         $lang = $this->session->get('lang');
         $menu = $this->getmenu();
         //echo debug::vars($menu);
