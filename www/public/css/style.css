@@ -319,9 +319,13 @@ input {
 }
 
 .Mname{
-  background-color: #b8b8b8;  
+  background-color: #e8d9c4;  
   font-size: 15px;
   font-weight: bold;
+  color: #b99052;
+  border-radius: 8px;
+  padding-left: 10px;
+
 }
 .Mcost{
 
@@ -331,7 +335,7 @@ input {
 }
 
 .Mcname{
-  margin-left: 25px;
+  margin-left: 45px;
   font-size: 18px;
   font-weight: bold;
 
@@ -339,14 +343,13 @@ input {
 
 .Mnumcost{
 	float: right;
-	color: #ff9600;
+	color: #333;
   font-size: 20px;
 }
 
 .menu_block{
 	margin: 5px;
-	background:#F7F7F7;
-	height: 180px;
+
 }
 .one_album p {
 	margin-top: 5px;

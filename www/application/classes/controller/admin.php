@@ -27,7 +27,8 @@ class Controller_Admin extends Controller_Common {
       ->bind('errors', $errors)
       ->bind('menu',$menu)
       ->bind('lang', $lang)
-      ->bind('category',$category);
+      ->bind('category',$category)
+      ->bind('auth' , $this->auth);
       $model = ORM::factory('Cookmenu');
       $category = DB::select('id','cname_'.$lang)->from('categories')->execute()->as_array();
       $menu = $this->getmenu();
@@ -41,6 +42,8 @@ class Controller_Admin extends Controller_Common {
       } catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('models'); 
       }
+      $ref = $this->request->referrer();
+      $this->request->redirect(URL::site($ref));
     }
 
     public function action_cookMenu_del()
