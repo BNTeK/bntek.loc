@@ -8,14 +8,14 @@ class Controller_Admin extends Controller_Common {
       ->bind('errors', $errors);
         if ( ! isset($_POST['submit'])) return;
         
-          if (Auth::instance()->login($_POST['login'], $_POST['password']))
-              {
-                
-              }
-              else
-              {
-                echo "НЕТ";
-              }
+        if (Auth::instance()->login($_POST['login'], $_POST['password']))
+        {
+            $this->request->redirect(URL::base());
+        }
+        else
+        {
+            echo "НЕТ";
+        }
     }          
     public function action_cookMenu_add()
     {
