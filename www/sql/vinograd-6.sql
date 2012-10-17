@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2
+-- version 3.5.2.1
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Окт 16 2012 г., 18:34
--- Версия сервера: 5.5.25a
--- Версия PHP: 5.4.4
+-- Время создания: Окт 17 2012 г., 15:00
+-- Версия сервера: 5.5.9
+-- Версия PHP: 5.3.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -31,16 +31,16 @@ CREATE TABLE IF NOT EXISTS `albums` (
   `title` varchar(100) NOT NULL,
   `cover_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Дамп данных таблицы `albums`
 --
 
 INSERT INTO `albums` (`id`, `title`, `cover_id`) VALUES
-(8, 'test 1', 24),
-(9, 'test 2', 37),
-(10, 'test 3', 34);
+(11, 'Главный зал', 42),
+(12, 'первый VIP-зал', 50),
+(13, 'второй VIP-зал', 54);
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `images` (
   `rel` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `home` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=39 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=57 ;
 
 --
 -- Дамп данных таблицы `images`
@@ -122,21 +122,23 @@ CREATE TABLE IF NOT EXISTS `images` (
 INSERT INTO `images` (`id`, `album_id`, `name`, `alt`, `rel`, `home`) VALUES
 (11, 1, '1350041525.jpg', 'Отображаемое имя', '', 0),
 (12, 1, '1350041555.jpg', 'Отображаемое имя', '', 0),
-(22, 8, '1350055952.jpg', '1-1', '1-1', 1),
-(24, 8, '1350055983.jpg', '1-3', '1-3', 1),
-(25, 8, '1350294278.jpg', 'Отображаемое22 имя', '', 1),
-(26, 8, '1350294300.jpg', 'lol', '', 0),
-(27, 8, '1350294310.jpg', 'loool', '', 0),
-(28, 8, '1350294343.jpg', 'Отображаемое имя', '', 0),
-(29, 8, '1350294349.jpg', 'Отображаемое имя', '', 1),
-(30, 8, '1350294357.jpg', 'Отображаемое имя', '', 1),
-(31, 8, '1350294365.jpg', 'Отображаемое имя', '', 1),
-(32, 8, '1350294372.jpg', 'Отображаемое имя', '', 0),
-(33, 9, '1350298790.jpg', 'Отображаемое имя', '', 0),
-(34, 10, '1350298799.jpg', 'Отображаемое имя', '', 0),
-(35, 9, '1350298844.jpg', 'Отображаемое имя', '', 0),
-(37, 9, '1350298906.jpg', 'Отображаемое имя', '', 0),
-(38, 8, '1350371413.jpg', 'Отображаемое имя', '', 0);
+(40, 11, '1350466678.jpg', 'reserved', 'reserved', 0),
+(41, 11, '1350466696.jpg', 'посуда', 'посуда', 1),
+(42, 11, '1350466706.jpg', 'посуда', 'посуда', 1),
+(43, 11, '1350466722.jpg', 'скидка', 'скидка', 1),
+(44, 11, '1350466736.jpg', 'главный зал', 'главный зал', 0),
+(45, 11, '1350466751.jpg', 'главный зал', 'главный зал', 0),
+(46, 11, '1350466763.jpg', 'главный зал', 'главный зал', 1),
+(47, 11, '1350466772.jpg', 'главный зал', 'главный зал', 0),
+(48, 11, '1350466798.jpg', 'VinoGrad', 'VinoGrad', 1),
+(49, 11, '1350466823.jpg', 'люстры', 'люстры', 1),
+(50, 12, '1350466878.jpg', 'общий вид', 'общий вид', 1),
+(51, 12, '1350466890.jpg', 'стол', 'стол', 0),
+(52, 12, '1350466911.jpg', 'стол', 'стол', 0),
+(53, 12, '1350466926.jpg', 'стена', 'стена', 1),
+(54, 13, '1350467049.jpg', 'диван', 'диван', 0),
+(55, 13, '1350467064.jpg', 'домашний кинотеатр', 'домашний кинотеатр', 0),
+(56, 13, '1350467138.jpg', 'стена', 'стена', 0);
 
 -- --------------------------------------------------------
 
@@ -150,18 +152,18 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `text` text NOT NULL,
   `position` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Дамп данных таблицы `pages`
 --
 
 INSERT INTO `pages` (`id`, `caption`, `text`, `position`) VALUES
-(1, 'caption', '<p>\n	Ткстовый текст</p>\n', 2),
+(1, 'caption', '<p>\n	Ткстовый текст</p>\n', 0),
+(2, 'caption', '<p>\n	Ткстовый текст</p>\n', 0),
+(3, 'caption', '<p>\n	Ткстовый текст</p>\n', 0),
 (4, 'caption', '<p>\n	Тестовый Заголовок</p>\n', 1),
-(5, 'caption', '<p>\n	Тестовый Заголовок</p>\n', 2),
-(6, ' Мы запустились', '<p>\n	Типо первая новость</p>\n', 1),
-(7, ' Мы запустились2', '<p>\n	&nbsp;Мы запустились2</p>\n', 2);
+(5, 'caption', '<p>\n	Тестовый Заголовок</p>\n', 2);
 
 -- --------------------------------------------------------
 
@@ -208,12 +210,12 @@ CREATE TABLE IF NOT EXISTS `recalls` (
 --
 
 INSERT INTO `recalls` (`id`, `name`, `email`, `theme`, `text`, `post_time`, `status`, `reply_id`) VALUES
-(1, 'uralsk.kz', 'bntek@mail.kz', 'qweq', 0x7177656577, 1349429963, 0, 0),
-(6, 'Виталий', 'BNTeKKZ@gmail.com', 'Мне очень у вас понравилось', 0xd09cd0bdd0b520d0bed187d0b5d0bdd18c20d18320d0b2d0b0d18120d0bfd0bed0bdd180d0b0d0b2d0b8d0bbd0bed181d18c2120d0bfd180d18fd0bc20d09ed0a7d095d09dd0ac20d09ed0a7d095d09dd0ac21205e5f5e, 1349697882, 1, 0),
-(7, 'asd', 'BNTeKKZ@gmail.com', 'asd', 0x617364617364, 1350024433, 1, 0),
-(8, 'asd', 'BNTeKKZ@gmail.com', 'asd', 0x617364617364, 1350024444, 1, 0),
-(9, 'MyName', 'mail@urals.kz', 'theeem!', 0xd0bdd18320d182d0b8d0bfd0b020d182d0bed0b3d0be20d0b2d180d0bed0b4d0b520d0bad0b0d0ba20d0bdd0b520d0bfd0bbd0bed185d0be2c20d0bdd0be20d0b220d186d0b5d0bbd0bed0bc20d0bad0b0d0ba20d182d0be20d182d0b0d0ba, 1350283137, 1, 0),
-(10, 'name sdsd', 'gaf@sukin', 'theme', 0x74657874206f66207468207468697320726563616c6c, 1350369309, 0, 0);
+(1, 'uralsk.kz', 'bntek@mail.kz', 'qweq', 'qweew', 1349429963, 1, 0),
+(6, 'Виталий', 'BNTeKKZ@gmail.com', 'Мне очень у вас понравилось', 'Мне очень у вас понравилось! прям ОЧЕНЬ ОЧЕНЬ! ^_^', 1349697882, 1, 0),
+(7, 'asd', 'BNTeKKZ@gmail.com', 'asd', 'asdasd', 1350024433, 1, 0),
+(8, 'asd', 'BNTeKKZ@gmail.com', 'asd', 'asdasd', 1350024444, 1, 0),
+(9, 'MyName', 'mail@urals.kz', 'theeem!', 'ну типа того вроде как не плохо, но в целом как то так', 1350283137, 1, 0),
+(10, 'name sdsd', 'gaf@sukin', 'theme', 'text of th this recall', 1350369309, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -235,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `replies` (
 --
 
 INSERT INTO `replies` (`id`, `text`, `post_time`, `recall_id`) VALUES
-(1, 0x666666666666, 1350283471, 9);
+(1, 'ffffff', 1350283471, 9);
 
 -- --------------------------------------------------------
 

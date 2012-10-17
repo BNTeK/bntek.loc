@@ -96,6 +96,7 @@ class Controller_Main extends Controller_Common {
     {
         $id = $this->request->param('id');
         $album = ORM::factory('album')->where('id', '=', $id)->find();
+        $this->template->title = $album->title;
         $photos = $album->photos->find_all();
 
 
@@ -106,6 +107,7 @@ class Controller_Main extends Controller_Common {
 
     public function action_albums()
     {
+        $this->template->title = 'Галерея';
         $albums = ORM::factory('album')->find_all();
         $this->template->content = View::factory('image/all_albums')
             ->set('albums', $albums);

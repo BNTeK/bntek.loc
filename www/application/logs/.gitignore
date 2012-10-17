@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+=======
 #################
 ## Eclipse
 #################
@@ -161,3 +167,4 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+>>>>>>> 7309e1abea090b5a92f6298ccfe7bffd514f7c69

@@ -49,6 +49,9 @@ spl_autoload_register(array('Kohana', 'auto_load'));
 ini_set('unserialize_callback_func', 'spl_autoload_call');
 
 // -- Configuration and initialization -----------------------------------------
+//Kohana::$environment = Kohana::PRODUCTION;
+Kohana::$environment = Kohana::DEVELOPMENT;
+if (Kohana::$environment == Kohana::PRODUCTION) ini_set('display_errors', 0);
 
 /**
  * Set the default language
@@ -81,9 +84,9 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
-ini_set('display_errors', 0);
 Kohana::init(array(
-    'base_url'   => 'http://vinograd.kz/',
+
+    'base_url'   => 'http://vinograd/',
     'index_file' => FALSE,
     'errors' => TRUE,
 ));
@@ -110,7 +113,8 @@ Kohana::modules(array(
     'orm'        => MODPATH.'orm',        // Object Relationship Mapping
     'editor' => MODPATH.'zulus',
     'pagination' => MODPATH.'pagination', // Pagination
-    'purifier'  => MODPATH.'purifier'
+    'purifier'  => MODPATH.'purifier',
+    'error'  => MODPATH.'error'
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	
@@ -166,5 +170,3 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
     'controller' => 'main',
     'action'     => 'index',
 ));
-
-set_exception_handler(array('Exceptionhandler', 'handle'));
