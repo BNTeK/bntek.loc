@@ -189,12 +189,11 @@ input {
 }
 
 .answer{
-	margin-bottom: 50px;
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-top:3px;
-	background-color: rgba( 159, 65, 81, 0.2);  /* чистый красный с прозрачностью 50% */
-);
+	margin: 10px 10px 10px 50px;
+	padding: 10px;
+	background-color: #ddd;
+	border-radius: 10px;
+	color: #333;
 }
 .linetop{
 	background-color: rgba( 159, 65, 81, 0.5); 
@@ -263,18 +262,32 @@ input {
 	font-style: italic;
 	margin-bottom: -10px;
 }
-
+.recall {
+	background-color: #eee;
+	padding: 15px;
+	margin: 20px;
+	border-radius: 10px;
+}
+.recall small {
+	color: #999;
+	font-size: 12px;
+}
+.recall p {
+	margin: 0;
+	font-size: 14px;
+}
 .img_view{
 	box-shadow: 0 10px 50px rgba(0,0,0,0.8);
 	margin-right: auto;
 	margin-left: 30px;
 }
 
-.static_home p{
+.static_home {
 	float: left;
 	font-size: 15px;
 	font-style: italic;
-	
+	height: 200px;
+	margin-bottom: 10px !important;
 }
 
 .rightimg  {
@@ -340,6 +353,27 @@ input {
 	margin: 20px 0 20px 10px;
 }
 
+
+.news_text{
+	font-size: 14px;
+
+}
+
+.news_caption{
+	font-size: 18px;
+}
+
+.news_block{
+	margin-top: 20px;
+}
+
+.news_caption_line{
+	margin-top: 25px;
+	background: #DBDBDB;
+}
+.home_block{
+	margin-top: 200px !important;
+}
 
 .contacts h1 {
 	font: italic 33px Georgia, Verdana, Arial, sans-serif;

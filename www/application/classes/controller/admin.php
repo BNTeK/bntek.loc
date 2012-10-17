@@ -312,7 +312,6 @@ public function action_news_add()
     $editor = editor::factory('CKEditor');
   $this->template->content= View::factory('admin/info/info_add')
   ->bind('editor',$editor)
-  ->bind('model',$model)
   ->bind('error', $errors);
   $post = Arr::extract($_POST, array('caption','position','ckeditor'),null);
   $model = ORM::factory('page');
@@ -326,15 +325,62 @@ public function action_news_add()
                 }
        catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('models'); 
-      }
-  
-   
-
+}
+    $this->request->redirect('admin/news_list');
 }
 
+public function action_news_edit()
+{
+  $this->check_role();
 
+  $id = $this->request->param('id');
+  $model = ORM::factory('page')->where('id','=',$id)->limit(1)->find()->as_array();
+  if(isset($model)){
+    // create default editor instance 500x300
+    $params = array(
+            "value" => $model['text'],
+    );
+  $editor = editor::factory('CKEditor',$params);
+  $this->template->content= View::factory('admin/info/info_add')
+  ->bind('editor',$editor)
+  ->bind('model',$model)
+  ->bind('error', $errors);
+  $post = Arr::extract($_POST, array('caption','position','ckeditor'),null);
 
+  $send = ORM::factory('page');
+   if ( ! isset($_POST['submit'])) return;  
+   try {
+            $send->values($post);
+            $send->save();                                                                   
+            
+                }
+       catch (ORM_Validation_Exception $e) {
+        $errors = $e->errors('models');
+   }
+        $this->request->redirect('admin/news_list');
+  }      
+}
 
+    public function action_news_list()
+    {
+      $model = ORM::factory('page')->find_all()->as_array();
+      $this->template->content= View::factory('admin/info/info_list')
+      ->bind('model',$model);
+    }
+
+    public function action_news_del()
+    {
+
+        $this->check_role();
+
+          $id = $this->request->param('id');
+          $model = ORM::factory('page')->where('id','=',$id)->limit(1)->find();
+        if($model->loaded()){
+          $model->delete();
+          $ref = $this->request->referrer();
+          $this->request->redirect(URL::site($ref));
+        }
+    }
     public function action_logout()
     {
         Auth::instance()->logout(TRUE);

@@ -34,6 +34,7 @@ class Controller_Main extends Controller_Common {
     
     public function action_recall()
     {
+        $this->template->title = 'Отзывы';
 
         if($this->auth->logged_in())
         {

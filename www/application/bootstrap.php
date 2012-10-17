@@ -85,7 +85,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-    'base_url'   => 'http://vinograd.dev/',
+    'base_url'   => 'http://bntek.loc/',
     'index_file' => FALSE,
     'errors' => TRUE,
 ));
@@ -130,6 +130,12 @@ Kohana::modules(array(
     'action'     => 'image_view																																																																',
   ));*/
 
+Route::set('reviews', 'reviews')
+    ->defaults(array(
+        'controller' => 'main',
+        'action'     => 'recall',
+    )
+);
 Route::set('contact', 'contact')
     ->defaults(array(
         'controller' => 'main',
