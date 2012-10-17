@@ -83,7 +83,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 ini_set('display_errors', 0);
 Kohana::init(array(
-    'base_url'   => 'http://bntek.loc/',
+    'base_url'   => 'http://vinograd.kz/',
     'index_file' => FALSE,
     'errors' => TRUE,
 ));

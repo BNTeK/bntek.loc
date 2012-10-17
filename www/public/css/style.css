@@ -161,11 +161,12 @@ input {
 
 .statements{
 	background-color: #e8d9c4;
-	width: 230px;
+	width: 200px;
 	margin-left: 15px;
 	font-style: italic;
 	color: #894351;
 	padding: 10px;
+		border-radius: 6px;
 }
 
 .statements_caption{
@@ -286,14 +287,19 @@ input {
 	float: left;
 	font-size: 15px;
 	font-style: italic;
-	height: 200px;
-	margin-bottom: 10px !important;
+	height: 350px;
+	margin-right: 20px !important;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	margin-left: -15px !important;
 }
+
+
 
 .rightimg  {
 	margin-right: 20px !important;
     float: right; /* Выравнивание по правому краю  */ 
-    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+    margin: 15px 0 15px 15px; /* Отступы вокруг картинки */
 }
 
 
@@ -364,7 +370,7 @@ input {
 }
 
 .news_block{
-	margin-top: 20px;
+	margin: 20px;
 }
 
 .news_caption_line{
@@ -372,7 +378,8 @@ input {
 	background: #DBDBDB;
 }
 .home_block{
-	margin-top: 200px !important;
+	margin-top: 400px !important;
+	margin: 20px;
 }
 
 .contacts h1 {

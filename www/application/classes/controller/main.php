@@ -3,14 +3,12 @@
 class Controller_Main extends Controller_Common {
     
      public function action_index ()
-    {    $model = DB::select('id','caption','position', 'text')->from('pages')->execute()->as_array();
-         // $model= ORM::factory('page')->find_all()->as_array();
-         foreach ($model as  $value) {
-           if($value['position'] == 1) $data['news'][]= $value;
-           if($value['position'] == 2) $data['events'][] = $value;
-         }
+    {   
+         $model['recall_home'] = ORM::factory('recall')->order_by('id', 'DESC')->find(); 
+         $model['news_home'] = ORM::factory('page')->where('position','=',1)->order_by('post_time', 'DESC')->find();
+         $model['event_home']= ORM::factory('page')->where('position','=', 2)->order_by('post_time', 'DESC')->find();
          $this->template->content= View::factory('site/home')
-         ->bind('model', $data);
+         ->bind('model', $model);
     }
 
     public function action_menu()

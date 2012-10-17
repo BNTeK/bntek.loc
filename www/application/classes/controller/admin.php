@@ -102,11 +102,44 @@ class Controller_Admin extends Controller_Common {
         
       } catch (ORM_Validation_Exception $e) {
         $errors = $e->errors('model'); 
+      }
+
+      $ref = $this->request->referrer();
+      $this->request->redirect(URL::site($ref));
+    }
+
+    public function action_category_edit()
+      {
+      $this->check_role();
+      $id = $this->request->param('id');
+
+      $lang = $this->session->get('lang');
+       $this->template->content= View::factory('admin/addcategory')
+      ->bind('errors', $errors)
+      ->bind('lang', $lang)
+      ->bind('category', $category)
+      ->bind('category_edit',$category_edit);
+       $category = DB::select('id','cname_'.$lang)->from('categories')->execute()->as_array();
+      
+      $category_edit = ORM::factory('category')->where('id','=',$id)->limit(1)->find();
+      if($category_edit->loaded()){
+       $model = ORM::factory('category');
+       $post = Arr::extract($_POST, array('cname_ru','cname_en','cname_kz'),null);
+
+       if ( ! isset($_POST['submit'])) return;
+        try {
+        $model->values($post);
+        $model->save();
+        
+      } catch (ORM_Validation_Exception $e) {
+        $errors = $e->errors('model'); 
 
        
         
       }
+     }
     }
+    
     
     public function action_category_del()
     {
@@ -316,6 +349,7 @@ public function action_news_add()
   $post = Arr::extract($_POST, array('caption','position','ckeditor'),null);
   $model = ORM::factory('page');
   $post['text'] = $post['ckeditor'];
+  $post['post_time'] = time();
   unset($post['ckeditor']);
    if ( ! isset($_POST['submit'])) return;  
    try {
