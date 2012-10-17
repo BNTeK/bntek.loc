@@ -10,7 +10,7 @@
      <a href="<?php echo URL::site();?>admin/cookMenu_edit/<?php echo $value2['id'];?>">Редактировать</a>
      <a href="<?php echo URL::site();?>admin/cookMenu_del/<?php echo $value2['id'];?>">Удалить</a>
     <?php endif; ?>
-     <span class="Mnumcost"><?php echo $value2['cost']?> тг.шт</span></div> 
+     <span class="Mnumcost"><?php echo $value2['cost']?> тг.</span></div> 
 
 </div>
 <?php endforeach?>
